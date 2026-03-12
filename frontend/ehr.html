@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Health Records (EHR) - Predict Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>🏥 Predict Care</h1>
+            <p class="subtitle">Your Personal Digital Health Assistant</p>
+            <p class="user-greeting">Welcome, <span id="user-name">User</span>!</p>
+
+            <!-- Navigation -->
+            <nav class="nav-bar">
+                <a href="index.html">New Prediction</a>
+                <a href="predictions.html">My History</a>
+                <a href="ehr.html" class="active">My EHR</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="progress.html">Health Progress</a>
+                <a href="#" id="notifications-btn" class="notification-link">
+                    🔔 <span id="notification-badge" class="notification-badge hidden">0</span>
+                </a>
+                <a href="#" id="logout-btn">Logout</a>
+            </nav>
+
+            <!-- Notification Panel (Hidden by default) -->
+            <div id="notification-panel" class="notification-panel hidden">
+                <div class="notification-header">
+                    <h3>🔔 Notifications</h3>
+                    <button id="mark-all-read" class="btn-text">Mark all read</button>
+                </div>
+                <div id="notification-list" class="notification-list">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- EHR Header with Info -->
+            <section class="ehr-header-section">
+                <div class="ehr-title-row">
+                    <h2>📁 My Electronic Health Records</h2>
+                    <button id="upload-btn" class="btn-primary">
+                        ➕ Add Record
+                    </button>
+                </div>
+                <p class="section-intro">
+                    Store and manage your medical documents, prescriptions, lab reports, and doctor notes.
+                    All records are securely stored and accessible only to you.
+                </p>
+            </section>
+
+            <!-- Statistics Cards -->
+            <section id="stats-section" class="ehr-stats-section hidden">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-icon">📄</span>
+                        <span class="stat-value" id="total-records">0</span>
+                        <span class="stat-label">Total Records</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">📁</span>
+                        <span class="stat-value" id="total-files">0</span>
+                        <span class="stat-label">Files Uploaded</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">💾</span>
+                        <span class="stat-value" id="total-size">0 KB</span>
+                        <span class="stat-label">Storage Used</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">🔍</span>
+                        <span class="stat-value" id="prediction-count">0</span>
+                        <span class="stat-label">Predictions</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Filter Bar -->
+            <section class="ehr-filter-section">
+                <div class="filter-bar">
+                    <label for="category-filter">Filter by:</label>
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="prescription">💊 Prescriptions</option>
+                        <option value="lab_report">🔬 Lab Reports</option>
+                        <option value="scan_image">🩻 Scans / X-Rays</option>
+                        <option value="op_note">📝 OP Notes</option>
+                        <option value="prediction">🔍 Predictions</option>
+                        <optgroup label="From Doctors">
+                            <option value="doctor_prescription">👨‍⚕️💊 Doctor's Prescriptions</option>
+                            <option value="doctor_report">👨‍⚕️📋 Doctor's Reports</option>
+                            <option value="doctor_note">👨‍⚕️📝 Doctor's Notes</option>
+                        </optgroup>
+                    </select>
+
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="show-archived">
+                        Show Archived
+                    </label>
+                </div>
+            </section>
+
+            <!-- Loading Indicator -->
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>Loading your health records...</p>
+            </div>
+
+            <!-- EHR Records List -->
+            <section id="ehr-section" class="ehr-records-section hidden">
+                <div id="ehr-list" class="ehr-list">
+                    <!-- Records will be inserted here -->
+                </div>
+            </section>
+
+            <!-- Empty State -->
+            <section id="empty-state" class="ehr-empty-section hidden">
+                <div class="empty-state">
+                    <p class="empty-icon">📁</p>
+                    <p class="empty-title">No health records yet</p>
+                    <p class="empty-text">
+                        Start building your health timeline by uploading documents or making predictions.
+                    </p>
+                    <div class="empty-actions">
+                        <button id="empty-upload-btn" class="btn-primary">➕ Add Record</button>
+                        <a href="index.html" class="btn-secondary">🔍 Make Prediction</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Error Section -->
+            <section id="error" class="error-section hidden">
+                <p id="error-text">An error occurred. Please try again.</p>
+            </section>
+        </main>
+
+        <!-- Upload Modal -->
+        <div id="upload-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>➕ Add Health Record</h3>
+                    <button id="close-modal" class="btn-close">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- Tab Selection -->
+                    <div class="tab-bar">
+                        <button class="tab-btn active" data-tab="file">📄 Upload File</button>
+                        <button class="tab-btn" data-tab="text">📝 Add Note</button>
+                    </div>
+
+                    <!-- File Upload Tab -->
+                    <div id="file-tab" class="tab-content active">
+                        <form id="file-upload-form">
+                            <div class="form-group">
+                                <label for="file-title">Title *</label>
+                                <input type="text" id="file-title" required
+                                    placeholder="e.g., Blood Test Report - Jan 2026">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="file-category">Category *</label>
+                                <select id="file-category" required>
+                                    <option value="">Select category...</option>
+                                    <option value="prescription">💊 Prescription</option>
+                                    <option value="lab_report">🔬 Lab Report</option>
+                                    <option value="scan_image">🩻 Scan / X-Ray</option>
+                                    <option value="op_note">📝 OP Note</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="file-input">File *</label>
+                                <div class="file-upload-area" id="file-drop-zone">
+                                    <input type="file" id="file-input"
+                                        accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.gif,.webp,.txt" hidden>
+                                    <div class="file-upload-prompt">
+                                        <span class="upload-icon">📤</span>
+                                        <p>Click to select or drag & drop</p>
+                                        <p class="file-types">PDF, Word, Images (max 10 MB)</p>
+                                    </div>
+                                    <div class="file-selected hidden">
+                                        <span class="file-name" id="selected-file-name"></span>
+                                        <button type="button" class="btn-remove" id="remove-file">&times;</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="file-description">Description (Optional)</label>
+                                <textarea id="file-description" rows="2"
+                                    placeholder="Add any notes about this record..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="file-date">Record Date (Optional)</label>
+                                <input type="date" id="file-date">
+                            </div>
+
+                            <button type="submit" class="btn-primary btn-full" id="file-submit-btn">
+                                📤 Upload Record
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Text Note Tab -->
+                    <div id="text-tab" class="tab-content hidden">
+                        <form id="text-record-form">
+                            <div class="form-group">
+                                <label for="text-title">Title *</label>
+                                <input type="text" id="text-title" required
+                                    placeholder="e.g., Dr. Sharma - Follow-up Notes">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="text-category">Category *</label>
+                                <select id="text-category" required>
+                                    <option value="">Select category...</option>
+                                    <option value="op_note">📝 OP Note / Doctor Note</option>
+                                    <option value="prescription">💊 Prescription Note</option>
+                                    <option value="lab_report">🔬 Lab Report Summary</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="text-content">Content *</label>
+                                <textarea id="text-content" rows="6" required
+                                    placeholder="Enter your notes, doctor's observations, or any relevant medical information..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="text-date">Record Date (Optional)</label>
+                                <input type="date" id="text-date">
+                            </div>
+
+                            <button type="submit" class="btn-primary btn-full" id="text-submit-btn">
+                                💾 Save Record
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- View Record Modal -->
+        <div id="view-modal" class="modal hidden">
+            <div class="modal-content modal-large">
+                <div class="modal-header">
+                    <h3 id="view-modal-title">View Record</h3>
+                    <button id="close-view-modal" class="btn-close">&times;</button>
+                </div>
+                <div class="modal-body" id="view-modal-body">
+                    <!-- Content inserted by JS -->
+                </div>
+                <div class="modal-footer">
+                    <button id="download-btn" class="btn-secondary hidden">📥 Download</button>
+                    <button id="delete-btn" class="btn-danger">🗑️ Delete</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Predict Care | Personal Digital Health Assistant</p>
+            <p class="tech-stack">EHR Module: Secure, User-Owned Health Records</p>
+        </footer>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="notifications.js"></script>
+    <script src="ehr.js"></script>
+</body>
+
+</html>

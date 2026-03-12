@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard - Predict Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container doctor-container">
+        <!-- Header Section -->
+        <header class="doctor-header">
+            <h1>👨‍⚕️ Doctor Portal</h1>
+            <p class="subtitle">Predict Care - Patient Record Management</p>
+            <p class="user-greeting">Welcome, <span id="doctor-name">Doctor</span>!</p>
+            <p class="doctor-info"><span id="doctor-specialization">Specialization</span> | <span id="doctor-hospital">Hospital</span></p>
+            
+            <!-- Navigation -->
+            <nav class="nav-bar doctor-nav">
+                <a href="doctor-dashboard.html" class="active">Dashboard</a>
+                <a href="#" id="logout-btn">Logout</a>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Instructions Section -->
+            <section class="instructions-section">
+                <div class="instruction-card">
+                    <h3>📋 How to Upload Patient Records</h3>
+                    <ol class="instruction-list">
+                        <li><strong>Get Patient ID:</strong> Ask the patient for their Predict Care email (User ID)</li>
+                        <li><strong>Verify Patient:</strong> Enter the email below to look up the patient</li>
+                        <li><strong>Add Records:</strong> Once verified, upload prescriptions, reports, or notes</li>
+                        <li><strong>Patient Notification:</strong> The patient will receive an instant notification</li>
+                    </ol>
+                    <div class="instruction-note">
+                        <strong>⚠️ Privacy Notice:</strong> You can only access a patient's EHR after they share their User ID with you. 
+                        You cannot browse or view patient lists.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Patient Lookup Section -->
+            <section class="patient-lookup-section">
+                <h2>🔍 Patient Lookup</h2>
+                <div class="lookup-form">
+                    <div class="form-group">
+                        <label for="patient-email">Patient Email (User ID)</label>
+                        <input 
+                            type="email" 
+                            id="patient-email" 
+                            placeholder="Enter patient's registered email"
+                            required
+                        >
+                    </div>
+                    <button id="lookup-btn" class="btn-doctor">
+                        🔍 Look Up Patient
+                    </button>
+                </div>
+                
+                <!-- Lookup Result -->
+                <div id="lookup-result" class="lookup-result hidden">
+                    <div id="lookup-success" class="lookup-success hidden">
+                        <div class="patient-info-card">
+                            <span class="patient-icon">👤</span>
+                            <div class="patient-details">
+                                <h4 id="patient-name">Patient Name</h4>
+                                <p id="patient-email-display">patient@email.com</p>
+                            </div>
+                            <span class="verified-badge">✓ Verified</span>
+                        </div>
+                    </div>
+                    <div id="lookup-error" class="lookup-error hidden">
+                        <p id="lookup-error-text">Patient not found</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Upload Section (shown after patient verified) -->
+            <section id="upload-section" class="upload-section hidden">
+                <h2>📤 Upload Medical Record</h2>
+                <p class="section-subtitle">Adding record for: <strong id="upload-for-patient">Patient Name</strong></p>
+                
+                <!-- Tab Selection -->
+                <div class="tab-bar">
+                    <button class="tab-btn active" data-tab="prescription-tab">💊 Assign Prescription</button>
+                    <button class="tab-btn" data-tab="report-tab">📋 Report/File</button>
+                    <button class="tab-btn" data-tab="notes-tab">📝 Doctor Notes</button>
+                </div>
+                
+                <!-- Prescription Tab -->
+                <div id="prescription-tab" class="tab-content active">
+                    <form id="assign-prescription-form" class="upload-form"> <!-- ID changed to avoid conflict/clarity -->
+                        <div class="alert-box info-alert">
+                            <span class="icon">ℹ️</span>
+                            <p>Assigning a new prescription will <strong>replace</strong> any currently active prescription for this patient.</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rx-days">Duration (Days) *</label>
+                            <input type="number" id="rx-days" required min="1" max="365" placeholder="e.g., 5">
+                            <small class="form-hint">Number of days the patient should follow this prescription.</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="rx-notes">Prescription Details *</label>
+                            <textarea id="rx-notes" rows="6" required placeholder="Enter medication details, dosage, and instructions..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-doctor btn-full">
+                            💊 Assign & Track Progress
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Report/File Tab -->
+                <div id="report-tab" class="tab-content hidden">
+                    <form id="report-form" class="upload-form">
+                        <div class="form-group">
+                            <label for="report-title">Report Title *</label>
+                            <input type="text" id="report-title" required placeholder="e.g., Blood Test Results - Jan 2026">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="report-category">Category *</label>
+                            <select id="report-category" required>
+                                <option value="">Select category...</option>
+                                <option value="doctor_report">📋 Medical Report</option>
+                                <option value="lab_report">🔬 Lab Report</option>
+                                <option value="scan_image">🩻 Scan / X-Ray</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="report-file">Upload File *</label>
+                            <div class="file-upload-area" id="report-drop-zone">
+                                <input type="file" id="report-file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.gif,.webp,.txt" hidden>
+                                <div class="file-upload-prompt">
+                                    <span class="upload-icon">📤</span>
+                                    <p>Click to select or drag & drop</p>
+                                    <p class="file-types">PDF, Word, Images (max 10 MB)</p>
+                                </div>
+                                <div class="file-selected hidden">
+                                    <span class="file-name" id="selected-report-name"></span>
+                                    <button type="button" class="btn-remove" id="remove-report-file">&times;</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="report-description">Description (Optional)</label>
+                            <textarea id="report-description" rows="2" placeholder="Notes about this report..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-doctor btn-full">
+                            📤 Upload Report
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Notes Tab -->
+                <div id="notes-tab" class="tab-content hidden">
+                    <form id="notes-form" class="upload-form">
+                        <div class="form-group">
+                            <label for="notes-title">Note Title *</label>
+                            <input type="text" id="notes-title" required placeholder="e.g., Consultation Notes - Follow-up Visit">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="notes-content">Doctor's Notes *</label>
+                            <textarea id="notes-content" rows="8" required placeholder="Enter consultation notes, observations, recommendations..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-doctor btn-full">
+                            📤 Save Notes
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Success Message -->
+            <div id="upload-success" class="upload-success-message hidden">
+                <div class="success-content">
+                    <span class="success-icon">✅</span>
+                    <h3>Record Uploaded Successfully!</h3>
+                    <p id="success-message">The record has been added to the patient's EHR.</p>
+                    <button id="add-another-btn" class="btn-secondary">Add Another Record</button>
+                </div>
+            </div>
+
+            <!-- Error Section -->
+            <section id="error" class="error-section hidden">
+                <p id="error-text">An error occurred. Please try again.</p>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Predict Care | Doctor Portal</p>
+            <p class="tech-stack">Secure Patient Record Management System</p>
+        </footer>
+    </div>
+
+    <script src="doctor-dashboard.js"></script>
+</body>
+</html>

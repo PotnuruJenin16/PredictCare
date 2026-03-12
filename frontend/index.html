@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Care - Health Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>🏥 Predict Care</h1>
+            <p class="subtitle">Your Personal Digital Health Assistant</p>
+            <p class="user-greeting">Welcome, <span id="user-name">User</span>!</p>
+
+            <!-- Navigation -->
+            <nav class="nav-bar">
+                <a href="index.html" class="active">Symptoms</a>
+                <a href="predictions.html">History</a>
+                <a href="ehr.html">Health Records</a>
+                <a href="doctors.html">Find Doctors</a>
+                <a href="progress.html">Health Progress</a>
+                <a href="#" id="notifications-btn" class="notification-link">
+                    🔔 <span id="notification-badge" class="notification-badge hidden">0</span>
+                </a>
+                <a href="#" id="logout-btn">Logout</a>
+            </nav>
+
+            <!-- Notification Panel (Hidden by default) -->
+            <div id="notification-panel" class="notification-panel hidden">
+                <div class="notification-header">
+                    <h3>🔔 Notifications</h3>
+                    <button id="mark-all-read" class="btn-text">Mark all read</button>
+                </div>
+                <div id="notification-list" class="notification-list">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Input Section -->
+            <section class="input-section">
+                <h2>Enter Your Symptoms</h2>
+                <p class="instruction">
+                    Describe your symptoms in plain English.
+                    For example: "fever, headache, body aches, fatigue"
+                </p>
+
+                <textarea id="symptoms-input" placeholder="Enter your symptoms here..." rows="4"></textarea>
+
+                <button id="predict-btn">
+                    🔍 Analyze Symptoms
+                </button>
+            </section>
+
+            <!-- Loading Indicator -->
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Analyzing symptoms...</p>
+            </div>
+
+            <!-- Results Section (Hidden by default) -->
+            <section id="results" class="results-section hidden">
+                <h2>Prediction Results</h2>
+
+                <div class="result-card">
+                    <!-- Disease Name -->
+                    <div class="result-item">
+                        <span class="label">Predicted Condition:</span>
+                        <span id="disease-name" class="value disease-name">-</span>
+                    </div>
+
+                    <!-- Risk Level -->
+                    <div class="result-item">
+                        <span class="label">Risk Level:</span>
+                        <span id="risk-level" class="value risk-badge">-</span>
+                    </div>
+
+                    <!-- Confidence -->
+                    <div class="result-item">
+                        <span class="label">Confidence:</span>
+                        <div class="confidence-container">
+                            <div class="confidence-bar">
+                                <div id="confidence-fill" class="confidence-fill"></div>
+                            </div>
+                            <span id="confidence-text" class="confidence-text">0%</span>
+                        </div>
+                    </div>
+
+                    <!-- Message/Warning -->
+                    <div id="message-box" class="message-box hidden">
+                        <p id="message-text"></p>
+                    </div>
+                </div>
+
+                <!-- Precautionary Advice Section -->
+                <div id="precautions-section" class="precautions-section hidden">
+                    <h3>
+                        <span class="precautions-icon">💡</span>
+                        Personalized Precautionary Advice
+                        <span id="advice-badge" class="advice-badge">-</span>
+                    </h3>
+
+                    <!-- Key Recommendations -->
+                    <div class="precautions-card">
+                        <h4>Key Recommendations</h4>
+                        <ul id="precautions-list" class="precautions-list">
+                            <!-- Populated by JS -->
+                        </ul>
+                    </div>
+
+                    <!-- Do's and Don'ts -->
+                    <div class="dos-donts-container">
+                        <div class="dos-card">
+                            <h4>✅ Do's</h4>
+                            <ul id="dos-list" class="advice-list">
+                                <!-- Populated by JS -->
+                            </ul>
+                        </div>
+                        <div class="donts-card">
+                            <h4>❌ Don'ts</h4>
+                            <ul id="donts-list" class="advice-list">
+                                <!-- Populated by JS -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- When to Consult Doctor -->
+                    <div class="consult-card">
+                        <h4>🏥 When to Consult a Doctor</h4>
+                        <ul id="consult-list" class="advice-list">
+                            <!-- Populated by JS -->
+                        </ul>
+                    </div>
+
+                    <!-- Precautions Disclaimer -->
+                    <div id="precautions-disclaimer" class="precautions-disclaimer">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Doctor Recommendations Section -->
+                <div id="doctors-section" class="doctors-section hidden">
+                    <h3>
+                        <span class="doctors-icon">👨‍⚕️</span>
+                        Recommended Doctors
+                    </h3>
+                    <p class="doctors-intro">Based on your prediction, we recommend consulting these specialists:</p>
+                    <div id="doctors-list" class="doctors-list">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Disclaimer -->
+                <div class="disclaimer">
+                    <strong>⚠️ Disclaimer:</strong> This is an academic demo project (Predict Care).
+                    Results are for educational purposes only and should NOT be used
+                    for actual medical diagnosis. Always consult a qualified healthcare
+                    professional for medical advice.
+                </div>
+            </section>
+
+            <!-- Error Section -->
+            <section id="error" class="error-section hidden">
+                <p id="error-text">An error occurred. Please try again.</p>
+            </section>
+
+            <!-- Location Section -->
+            <section id="location-section" class="location-section">
+                <h2>
+                    <span class="location-heading-icon">📍</span>
+                    Your Location
+                </h2>
+                <p class="location-description">
+                    Sharing your location helps us find nearby doctors and clinics for you.
+                </p>
+
+                <!-- Status message -->
+                <div id="location-status" class="location-status">
+                    <span id="location-status-icon" class="location-status-icon">🌐</span>
+                    <span id="location-status-text">Location not yet shared</span>
+                </div>
+
+                <!-- Location details (shown after permission granted) -->
+                <div id="location-details" class="location-details hidden">
+                    <div class="location-coords">
+                        <div class="coord-item">
+                            <span class="coord-label">Latitude</span>
+                            <span id="location-lat" class="coord-value">—</span>
+                        </div>
+                        <div class="coord-item">
+                            <span class="coord-label">Longitude</span>
+                            <span id="location-lng" class="coord-value">—</span>
+                        </div>
+                    </div>
+                    <!-- Embedded map -->
+                    <div id="location-map" class="location-map">
+                        <iframe id="location-map-frame" width="100%" height="220" style="border:0; border-radius: 12px;" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src=""></iframe>
+                    </div>
+                </div>
+
+                <!-- Share / Retry button -->
+                <button id="location-btn" class="location-btn">
+                    📍 Share My Location
+                </button>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Predict Care | Personal Digital Health Assistant</p>
+            <p class="tech-stack">Built with: Python, FastAPI, scikit-learn, TF-IDF, RandomForest</p>
+        </footer>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="notifications.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

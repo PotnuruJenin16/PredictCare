@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors Directory - Predict Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>🏥 Predict Care</h1>
+            <p class="subtitle">Your Personal Digital Health Assistant</p>
+            <p class="user-greeting">Welcome, <span id="user-name">User</span>!</p>
+
+            <!-- Navigation -->
+            <nav class="nav-bar">
+                <a href="index.html">New Prediction</a>
+                <a href="predictions.html">My History</a>
+                <a href="ehr.html">My EHR</a>
+                <a href="doctors.html" class="active">Doctors</a>
+                <a href="progress.html">Health Progress</a>
+                <a href="#" id="notifications-btn" class="notification-link">
+                    🔔 <span id="notification-badge" class="notification-badge hidden">0</span>
+                </a>
+                <a href="#" id="logout-btn">Logout</a>
+            </nav>
+
+            <!-- Notification Panel (Hidden by default) -->
+            <div id="notification-panel" class="notification-panel hidden">
+                <div class="notification-header">
+                    <h3>🔔 Notifications</h3>
+                    <button id="mark-all-read" class="btn-text">Mark all read</button>
+                </div>
+                <div id="notification-list" class="notification-list">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Doctors Directory Section -->
+            <section class="doctors-directory-section">
+                <h2>👨‍⚕️ Our Medical Partners</h2>
+                <p class="section-intro">
+                    Below is our directory of partner doctors and specialists based in Visakhapatnam.
+                    When you get a prediction, we recommend doctors based on your condition and their expertise.
+                </p>
+
+                <!-- Filter Bar -->
+                <div class="filter-bar">
+                    <label for="specialization-filter">Filter by Specialization:</label>
+                    <select id="specialization-filter">
+                        <option value="all">All Specializations</option>
+                        <option value="General Physician">General Physician</option>
+                        <option value="Endocrinologist">Endocrinologist</option>
+                        <option value="Diabetologist">Diabetologist</option>
+                        <option value="Cardiologist">Cardiologist</option>
+                        <option value="Interventional Cardiologist">Interventional Cardiologist</option>
+                        <option value="Pulmonologist">Pulmonologist</option>
+                        <option value="Neurologist">Neurologist</option>
+                        <option value="Dermatologist">Dermatologist</option>
+                        <option value="Gastroenterologist">Gastroenterologist</option>
+                        <option value="Surgical Gastroenterologist">Surgical Gastroenterologist</option>
+                        <option value="Orthopedist">Orthopedist</option>
+                    </select>
+                </div>
+
+                <!-- Loading Indicator -->
+                <div id="loading" class="loading">
+                    <div class="spinner"></div>
+                    <p>Loading doctors...</p>
+                </div>
+
+                <!-- Doctors Grid -->
+                <div id="doctors-grid" class="doctors-grid hidden">
+                    <!-- Populated by JS -->
+                </div>
+
+                <!-- Empty State -->
+                <div id="empty-state" class="empty-state hidden">
+                    <p>No doctors found for this specialization.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Predict Care | Personal Digital Health Assistant</p>
+            <p class="tech-stack">Built with: Python, FastAPI, scikit-learn, TF-IDF, RandomForest</p>
+        </footer>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="notifications.js"></script>
+    <script>
+        // Check authentication
+        requireAuth();
+
+        // Set user name
+        const user = getUser();
+        if (user) {
+            document.getElementById('user-name').textContent = user.name;
+        }
+
+        // Logout handler
+        document.getElementById('logout-btn').addEventListener('click', function (e) {
+            e.preventDefault();
+            logout();
+        });
+
+        // State
+        let allDoctors = [];
+
+        // Load doctors on page load
+        document.addEventListener('DOMContentLoaded', loadDoctors);
+
+        // Filter change handler
+        document.getElementById('specialization-filter').addEventListener('change', filterDoctors);
+
+        async function loadDoctors() {
+            const loadingEl = document.getElementById('loading');
+            const doctorsGrid = document.getElementById('doctors-grid');
+            const emptyState = document.getElementById('empty-state');
+
+            try {
+                const response = await fetch(`${API_URL}/doctors`);
+
+                if (!response.ok) {
+                    throw new Error('Failed to load doctors');
+                }
+
+                allDoctors = await response.json();
+
+                loadingEl.classList.add('hidden');
+
+                if (allDoctors.length === 0) {
+                    emptyState.classList.remove('hidden');
+                    return;
+                }
+
+                renderDoctors(allDoctors);
+                doctorsGrid.classList.remove('hidden');
+
+            } catch (error) {
+                console.error('Error loading doctors:', error);
+                loadingEl.innerHTML = '<p class="error">Failed to load doctors. Please try again.</p>';
+            }
+        }
+
+        function filterDoctors() {
+            const filter = document.getElementById('specialization-filter').value;
+            const doctorsGrid = document.getElementById('doctors-grid');
+            const emptyState = document.getElementById('empty-state');
+
+            let filtered = allDoctors;
+
+            if (filter !== 'all') {
+                filtered = allDoctors.filter(d => d.specialization === filter);
+            }
+
+            if (filtered.length === 0) {
+                doctorsGrid.classList.add('hidden');
+                emptyState.classList.remove('hidden');
+            } else {
+                emptyState.classList.add('hidden');
+                doctorsGrid.classList.remove('hidden');
+                renderDoctors(filtered);
+            }
+        }
+
+        function renderDoctors(doctors) {
+            const doctorsGrid = document.getElementById('doctors-grid');
+
+            doctorsGrid.innerHTML = doctors.map(d => `
+                <div class="doctor-card-full">
+                    <div class="doctor-avatar">👨‍⚕️</div>
+                    <div class="doctor-info-full">
+                        <h3>${escapeHtml(d.name)}</h3>
+                        <span class="specialization-badge">${escapeHtml(d.specialization)}</span>
+                        <div class="doctor-details-full">
+                            <p><span class="icon">📍</span> ${escapeHtml(d.location)}</p>
+                            <p><span class="icon">📞</span> <a href="tel:${d.contact.replace(/\\s/g, '')}">${escapeHtml(d.contact)}</a></p>
+                            <p><span class="icon">🕐</span> ${escapeHtml(d.availability)}</p>
+                            <p><span class="icon">💰</span> ${escapeHtml(d.consultation_fee)}</p>
+                            <p><span class="icon">⭐</span> ${escapeHtml(d.experience || 'N/A')} experience</p>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+    </script>
+</body>
+
+</html>

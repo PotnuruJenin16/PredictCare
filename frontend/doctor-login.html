@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Login - Predict Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <h1>👨‍⚕️</h1>
+            <h2>Doctor Portal</h2>
+            <p class="auth-subtitle">Predict Care - Healthcare Provider Login</p>
+            
+            <form id="doctor-login-form" onsubmit="handleDoctorLogin(event)">
+                <div class="form-group">
+                    <label for="email">Doctor Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required 
+                        placeholder="Enter your email"
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        required 
+                        placeholder="Enter your password"
+                    >
+                </div>
+                
+                <button type="submit" id="login-btn" class="btn-doctor">Login as Doctor</button>
+                
+                <div id="error-message" class="error-message hidden"></div>
+            </form>
+            
+            <div class="auth-footer">
+                <p class="note">⚠️ Doctor accounts are pre-registered by administration.</p>
+                <p class="note">If you need access, contact the Predict Care team.</p>
+                <hr class="divider">
+                <p>Are you a patient? <a href="login.html">Patient Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = "http://localhost:8000";
+        const DOCTOR_TOKEN_KEY = "predict_care_doctor_token";
+        const DOCTOR_DATA_KEY = "predict_care_doctor_data";
+        
+        // Check if already logged in as doctor
+        if (localStorage.getItem(DOCTOR_TOKEN_KEY)) {
+            window.location.href = 'doctor-dashboard.html';
+        }
+        
+        async function handleDoctorLogin(event) {
+            event.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const errorEl = document.getElementById('error-message');
+            const btn = document.getElementById('login-btn');
+            
+            // Hide previous errors
+            errorEl.classList.add('hidden');
+            btn.disabled = true;
+            btn.textContent = 'Logging in...';
+            
+            try {
+                const response = await fetch(`${API_URL}/doctor/login`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ email, password }),
+                });
+                
+                const data = await response.json();
+                
+                if (!response.ok) {
+                    throw new Error(data.detail || 'Login failed');
+                }
+                
+                // Save doctor token and data
+                localStorage.setItem(DOCTOR_TOKEN_KEY, data.access_token);
+                localStorage.setItem(DOCTOR_DATA_KEY, JSON.stringify(data.doctor));
+                
+                // Redirect to doctor dashboard
+                window.location.href = 'doctor-dashboard.html';
+                
+            } catch (error) {
+                errorEl.textContent = error.message;
+                errorEl.classList.remove('hidden');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Login as Doctor';
+            }
+        }
+    </script>
+</body>
+</html>

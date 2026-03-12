@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My History - Predict Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>🏥 Predict Care</h1>
+            <p class="subtitle">Your Personal Digital Health Assistant</p>
+            <p class="user-greeting">Welcome, <span id="user-name">User</span>!</p>
+
+            <!-- Navigation -->
+            <nav class="nav-bar">
+                <a href="index.html">New Prediction</a>
+                <a href="predictions.html" class="active">My History</a>
+                <a href="ehr.html">My EHR</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="progress.html">Health Progress</a>
+                <a href="#" id="notifications-btn" class="notification-link">
+                    🔔 <span id="notification-badge" class="notification-badge hidden">0</span>
+                </a>
+                <a href="#" id="logout-btn">Logout</a>
+            </nav>
+
+            <!-- Notification Panel (Hidden by default) -->
+            <div id="notification-panel" class="notification-panel hidden">
+                <div class="notification-header">
+                    <h3>🔔 Notifications</h3>
+                    <button id="mark-all-read" class="btn-text">Mark all read</button>
+                </div>
+                <div id="notification-list" class="notification-list">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Loading Indicator -->
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>Loading your health history...</p>
+            </div>
+
+            <!-- Predictions List -->
+            <section id="predictions-section" class="predictions-section hidden">
+                <h2>📋 Your Health Prediction History</h2>
+                <p class="section-intro">
+                    View your past predictions, advice, and recommended doctors.
+                    This helps you track your health patterns over time.
+                </p>
+                <div id="predictions-list" class="predictions-list">
+                    <!-- Predictions will be inserted here -->
+                </div>
+            </section>
+
+            <!-- Empty State -->
+            <section id="empty-state" class="predictions-section hidden">
+                <div class="empty-state">
+                    <p>📋</p>
+                    <p>No predictions yet</p>
+                    <p><a href="index.html">Make your first prediction</a></p>
+                </div>
+            </section>
+
+            <!-- Error Section -->
+            <section id="error" class="error-section hidden">
+                <p id="error-text">An error occurred. Please try again.</p>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Predict Care | Personal Digital Health Assistant</p>
+            <p class="tech-stack">Built with: Python, FastAPI, scikit-learn, TF-IDF, RandomForest</p>
+        </footer>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="notifications.js"></script>
+    <script>
+        // Check authentication
+        requireAuth();
+
+        // Set user name
+        const user = getUser();
+        if (user) {
+            document.getElementById('user-name').textContent = user.name;
+        }
+
+        // Logout handler
+        document.getElementById('logout-btn').addEventListener('click', function (e) {
+            e.preventDefault();
+            logout();
+        });
+
+        // Load predictions on page load
+        document.addEventListener('DOMContentLoaded', loadPredictions);
+
+        async function loadPredictions() {
+            const loadingEl = document.getElementById('loading');
+            const predictionsSection = document.getElementById('predictions-section');
+            const emptyState = document.getElementById('empty-state');
+            const errorSection = document.getElementById('error');
+            const errorText = document.getElementById('error-text');
+            const predictionsList = document.getElementById('predictions-list');
+
+            try {
+                const response = await authenticatedFetch(`${API_URL}/predictions/me`);
+
+                if (!response.ok) {
+                    throw new Error('Failed to load predictions');
+                }
+
+                const predictions = await response.json();
+
+                loadingEl.classList.add('hidden');
+
+                if (predictions.length === 0) {
+                    emptyState.classList.remove('hidden');
+                    return;
+                }
+
+                // Render predictions with enhanced details
+                predictionsList.innerHTML = predictions.map(p => `
+                    <div class="prediction-card-full">
+                        <div class="prediction-header">
+                            <h3>${escapeHtml(p.predicted_disease)}</h3>
+                            <span class="prediction-date">${formatDate(p.created_at)}</span>
+                        </div>
+                        <div class="prediction-body">
+                            <div class="prediction-symptoms">
+                                <strong>Symptoms:</strong> ${escapeHtml(p.symptoms_text)}
+                            </div>
+                            <div class="prediction-stats">
+                                <div class="stat">
+                                    <span class="stat-label">Risk:</span>
+                                    <span class="stat-value risk-badge risk-${p.risk_level.toLowerCase()}">${p.risk_level}</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Confidence:</span>
+                                    <span class="stat-value">${Math.round(p.confidence * 100)}%</span>
+                                </div>
+                                ${p.advice_level ? `
+                                <div class="stat">
+                                    <span class="stat-label">Urgency:</span>
+                                    <span class="stat-value advice-badge advice-${p.advice_level}">${p.advice_level.toUpperCase()}</span>
+                                </div>
+                                ` : ''}
+                            </div>
+                            
+                            ${p.precautions_text ? `
+                            <div class="prediction-advice">
+                                <button class="toggle-btn" onclick="toggleAdvice(this)">
+                                    💡 Show Advice
+                                </button>
+                                <div class="advice-content hidden">
+                                    <pre>${escapeHtml(p.precautions_text)}</pre>
+                                </div>
+                            </div>
+                            ` : ''}
+                            
+                            ${p.recommended_doctors && p.recommended_doctors.length > 0 ? `
+                            <div class="prediction-doctors">
+                                <button class="toggle-btn" onclick="toggleDoctors(this)">
+                                    👨‍⚕️ Show Recommended Doctors (${p.recommended_doctors.length})
+                                </button>
+                                <div class="doctors-content hidden">
+                                    ${p.recommended_doctors.map(d => `
+                                        <div class="mini-doctor-card">
+                                            <strong>${escapeHtml(d.name)}</strong>
+                                            <span class="specialization">${escapeHtml(d.specialization)}</span>
+                                            <span class="contact">📞 ${escapeHtml(d.contact)}</span>
+                                            ${d.experience ? `<span class="experience">⭐ ${escapeHtml(d.experience)}</span>` : ''}
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                            ` : ''}
+                        </div>
+                    </div>
+                `).join('');
+
+                predictionsSection.classList.remove('hidden');
+
+            } catch (error) {
+                console.error('Error loading predictions:', error);
+                loadingEl.classList.add('hidden');
+                errorText.textContent = error.message || 'Failed to load predictions';
+                errorSection.classList.remove('hidden');
+            }
+        }
+
+        function toggleAdvice(btn) {
+            const content = btn.nextElementSibling;
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                btn.textContent = '💡 Hide Advice';
+            } else {
+                content.classList.add('hidden');
+                btn.textContent = '💡 Show Advice';
+            }
+        }
+
+        function toggleDoctors(btn) {
+            const content = btn.nextElementSibling;
+            const count = btn.getAttribute('data-count') || '';
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                btn.textContent = '👨‍⚕️ Hide Doctors';
+            } else {
+                content.classList.add('hidden');
+                btn.innerHTML = btn.innerHTML.replace('Hide', 'Show');
+            }
+        }
+
+        function formatDate(isoString) {
+            const date = new Date(isoString);
+            return date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+    </script>
+</body>
+
+</html>

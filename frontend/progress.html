@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Progress - Predict Care</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Extra styles for progress bar -->
+    <style>
+        .progress-container {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-light);
+            animation: fadeInUp 0.5s ease-out;
+        }
+
+        .prescription-header {
+            border-bottom: 1px solid var(--border-light);
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .prescription-title {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0;
+            font-weight: 700;
+        }
+
+        .doctor-badge {
+            background: var(--primary-light);
+            color: var(--primary-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 600;
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+
+        .progress-section {
+            margin: 2rem 0;
+        }
+
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #475569;
+        }
+
+        .progress-track {
+            background: #f1f5f9;
+            height: 12px;
+            border-radius: 99px;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            background: linear-gradient(90deg, #3b82f6, #06b6d4);
+            height: 100%;
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+
+        .checklist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .day-check {
+            position: relative;
+        }
+
+        .day-check input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        .check-label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: var(--background-secondary);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 0.75rem;
+            cursor: pointer;
+            transition: all var(--transition);
+            color: var(--text-muted);
+        }
+
+        .check-label:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+            background: var(--card-bg);
+        }
+
+        .day-check input:checked~.check-label {
+            background: rgba(59, 130, 246, 0.1);
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
+        }
+
+        .day-check input:checked~.check-label .check-icon {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        .day-number {
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .check-icon {
+            font-size: 1.25rem;
+            opacity: 0.2;
+            transform: scale(0.8);
+            transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .day-check input:checked~.check-label .check-icon {
+            opacity: 1;
+        }
+
+        .notes-content {
+            background: rgba(30, 41, 59, 0.6);
+            border-left: 4px solid var(--info-color);
+            padding: 1.25rem;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            color: var(--text-primary);
+            white-space: pre-wrap;
+            line-height: 1.7;
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-secondary);
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-light);
+        }
+
+        .empty-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+            opacity: 0.5;
+            filter: grayscale(1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <!-- Header Section -->
+        <header>
+            <h1>🏥 Predict Care</h1>
+            <p class="subtitle">Your Personal Digital Health Assistant</p>
+            <p class="user-greeting">Welcome, <span id="user-name">User</span>!</p>
+
+            <!-- Navigation -->
+            <nav class="nav-bar">
+                <a href="index.html">Symptoms</a>
+                <a href="predictions.html">History</a>
+                <a href="ehr.html">Health Records</a>
+                <a href="doctors.html">Find Doctors</a>
+                <a href="progress.html" class="active">Health Progress</a>
+                <a href="#" id="notifications-btn" class="notification-link">
+                    🔔 <span id="notification-badge" class="notification-badge hidden">0</span>
+                </a>
+                <a href="#" id="logout-btn">Logout</a>
+            </nav>
+
+            <!-- Notification Panel (Hidden by default) -->
+            <div id="notification-panel" class="notification-panel hidden">
+                <div class="notification-header">
+                    <h3>🔔 Notifications</h3>
+                    <button id="mark-all-read" class="btn-text">Mark all read</button>
+                </div>
+                <div id="notification-list" class="notification-list">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <h2 class="section-title">Prescription Follow-up Progress</h2>
+
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Loading your progress...</p>
+            </div>
+
+            <div id="active-prescription" class="hidden">
+                <div class="progress-container">
+                    <div class="prescription-header">
+                        <h3 class="prescription-title">Active Prescription</h3>
+                        <span class="doctor-badge" id="doctor-name-display">Dr. Name</span>
+                    </div>
+
+                    <p class="section-subtitle">Doctor's Instructions:</p>
+                    <div class="notes-content" id="prescription-notes">
+                        Take generic meds...
+                    </div>
+
+                    <div class="progress-section">
+                        <div class="progress-label">
+                            <span>Adherence Score</span>
+                            <span id="progress-percent">0%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-bar-fill" id="progress-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <p class="section-subtitle">Daily Tracker:</p>
+                    <div class="checklist-grid" id="days-grid">
+                        <!-- Days generated by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="empty-state" class="empty-state hidden">
+                <span class="empty-icon">✓</span>
+                <h3>No Active Prescription</h3>
+                <p>You don't have any active prescriptions to track right now.</p>
+                <p>When a doctor assigns one, it will appear here.</p>
+            </div>
+
+            <!-- Error Section -->
+            <section id="error" class="error-section hidden">
+                <p id="error-text">An error occurred.</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="notifications.js"></script>
+    <script src="progress.js"></script>
+</body>
+
+</html>
