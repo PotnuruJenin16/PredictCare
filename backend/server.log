@@ -1,0 +1,82 @@
+INFO:     Will watch for changes in these directories: ['/Users/revanth/Desktop/Projects/HealthAssistant/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [66761] using WatchFiles
+[✓] Model, vectorizer, and risk mapping loaded successfully!
+
+==================================================
+Starting Predict Care API Server
+==================================================
+
+Server running at: http://localhost:8000
+API Docs at: http://localhost:8000/docs
+
+Press Ctrl+C to stop the server
+==================================================
+
+INFO:     Started server process [66764]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+[✓] Model, vectorizer, and risk mapping loaded successfully!
+[✓] Model, vectorizer, and risk mapping loaded successfully!
+INFO:     127.0.0.1:65439 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65441 - "OPTIONS /notifications HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65441 - "GET /notifications HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:65443 - "GET /ehr/categories/list HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'doctors.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [66764]
+INFO:     Started server process [70176]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'doctors.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [70176]
+[✓] Model, vectorizer, and risk mapping loaded successfully!
+[✓] Model, vectorizer, and risk mapping loaded successfully!
+INFO:     Started server process [70189]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'doctors.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [70189]
+[✓] Model, vectorizer, and risk mapping loaded successfully!
+[✓] Model, vectorizer, and risk mapping loaded successfully!
+INFO:     Started server process [70192]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'doctors.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [70192]
+[✓] Model, vectorizer, and risk mapping loaded successfully!
+[✓] Model, vectorizer, and risk mapping loaded successfully!
+INFO:     Started server process [70200]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'main.py', 'doctors.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [70200]
+[✓] Model, vectorizer, and risk mapping loaded successfully!
+[✓] Model, vectorizer, and risk mapping loaded successfully!
+INFO:     Started server process [70798]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [70798]
+[✓] Model, vectorizer, and risk mapping loaded successfully!
+[✓] Model, vectorizer, and risk mapping loaded successfully!
+INFO:     Started server process [71572]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.

@@ -1,0 +1,25 @@
+# Python dependencies for Disease Prediction System
+# Install with: pip install -r requirements.txt
+
+# Web Framework
+fastapi==0.104.1
+uvicorn==0.24.0
+email-validator
+# Machine Learning
+scikit-learn>=1.3.2
+joblib==1.3.2
+
+# Data Processing
+pandas==2.1.3
+numpy==1.26.2
+
+# HTTP server (for CORS)
+python-multipart==0.0.6
+
+# Authentication
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+
+# Database
+sqlalchemy==2.0.23

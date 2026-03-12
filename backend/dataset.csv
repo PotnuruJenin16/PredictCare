@@ -1,0 +1,1001 @@
+symptoms,disease,risk_level
+loss of appetite and swollen salivary glands and muscle aches,Mumps,MEDIUM
+"fatigue, weight loss, tremors",Hyperthyroidism,MEDIUM
+"weight gain, muscle weakness, dry skin, constipation, fatigue, cold sensitivity",Hypothyroidism,MEDIUM
+"back pain, weakness, stooped posture, joint pain, bone fractures",Osteoporosis,MEDIUM
+"staring spells, confusion, loss of consciousness, seizures",Epilepsy,HIGH
+stooped posture and loss of height and back pain and weakness,Osteoporosis,MEDIUM
+scaling burning sensation itching,Fungal Infection,LOW
+"high fever, runny nose, cough, sensitivity to light, rash, red eyes",Measles,MEDIUM
+pain during urination and nausea and severe pain in side and pink urine and frequent urination,Kidney Stones,HIGH
+runny nose and facial pain and headache and bad breath and fever and nasal congestion,Sinusitis,LOW
+"irritability, headache, difficulty concentrating, difficulty falling asleep, waking up at night",Insomnia,LOW
+"shortness of breath, mucus production, chest discomfort, mild fever",Bronchitis,MEDIUM
+burning sensation redness scaling,Fungal Infection,LOW
+"dark urine, dry skin, dry mouth, fatigue, dizziness",Dehydration,MEDIUM
+itchy nose and itchy throat and sneezing and runny nose and watery eyes and nasal congestion,Allergic Rhinitis,LOW
+watery eyes red eyes gritty feeling discharge from eyes itchy eyes,Conjunctivitis,LOW
+chest pain headache dizziness,Hypertension,HIGH
+gritty feeling and sensitivity to light and itchy eyes and red eyes,Conjunctivitis,LOW
+appetite changes difficulty concentrating persistent sadness sleep problems,Depression,MEDIUM
+swollen legs shortness of breath fatigue chest pain dizziness irregular heartbeat,Heart Disease,HIGH
+rough patches dry skin cracked skin red patches itchy skin,Eczema,LOW
+diarrhea fever vomiting,Food Poisoning,MEDIUM
+neck pain dull headache tenderness on scalp pressure around forehead,Tension Headache,LOW
+"headache, loss of appetite, fatigue",Mumps,MEDIUM
+"vomiting, dark stool, nausea",Peptic Ulcer,MEDIUM
+gas diarrhea cramping,Irritable Bowel Syndrome,LOW
+coughing blood and persistent cough and fever and night sweats and chest pain,Tuberculosis,HIGH
+unconsciousness and high body temperature and confusion and red skin and rapid heartbeat and nausea,Heat Stroke,HIGH
+"nausea, headache, eye pain, blurred vision, halos around lights, vision loss",Glaucoma,HIGH
+"stomach pain, nausea, hives, difficulty breathing",Food Allergy,MEDIUM
+"visual disturbances, nausea, vomiting",Migraine,LOW
+fever nasal congestion facial pain bad breath,Sinusitis,LOW
+"itching, redness, cracking skin",Fungal Infection,LOW
+fever and headache and fatigue,Chickenpox,MEDIUM
+"fatigue, pressure around forehead, dull headache",Tension Headache,LOW
+regurgitation difficulty swallowing sour taste,Acid Reflux (GERD),LOW
+"swelling, muscle pain, muscle spasms, limited movement, weakness, bruising",Muscle Strain,LOW
+"pimples, oily skin, whiteheads",Acne,LOW
+"vision loss, nausea, halos around lights, headache, blurred vision",Glaucoma,HIGH
+fatigue chills high fever difficulty breathing cough with phlegm,Pneumonia,HIGH
+headache shortness of breath fatigue,Anemia,MEDIUM
+wheezing and difficulty breathing and rapid breathing and shortness of breath and coughing at night and chest tightness,Asthma,MEDIUM
+chest pain shortness of breath swollen legs irregular heartbeat fatigue,Heart Disease,HIGH
+dizziness thirst dry skin,Dehydration,MEDIUM
+"chest pain, shortness of breath, headache, dizziness, nosebleeds",Hypertension,HIGH
+fatigue and loss of appetite and abdominal pain and jaundice and nausea,Hepatitis,HIGH
+itchy nose sneezing nasal congestion watery eyes itchy throat runny nose,Allergic Rhinitis,LOW
+swelling dry skin cracking itchy skin blisters redness,Dermatitis,LOW
+"vomiting, nausea, high fever",Malaria,HIGH
+pelvic pain fever burning urination cloudy urine frequent urination,Urinary Tract Infection,MEDIUM
+red patches and thick nails and itching and silvery scales and dry cracked skin,Psoriasis,LOW
+fatigue and frequent urination and swollen ankles and muscle cramps and blood in urine,Kidney Disease,HIGH
+"jaundice, dark urine, fatigue, nausea",Hepatitis,HIGH
+red patches dry cracked skin thick nails,Psoriasis,LOW
+fatigue chills sore throat,Influenza (Flu),MEDIUM
+runny nose and high fever and body aches,Influenza (Flu),MEDIUM
+swelling cracking redness,Dermatitis,LOW
+sore throat mild fever congestion runny nose watery eyes sneezing,Common Cold,LOW
+"diarrhea, gas, cramping, abdominal pain, constipation, bloating",Irritable Bowel Syndrome,LOW
+strong urine odor and burning urination and pelvic pain and cloudy urine and fever and frequent urination,Urinary Tract Infection,MEDIUM
+"vision problems, headache, chest pain",Hypertension,HIGH
+chills high fever chest pain,Pneumonia,HIGH
+"dry skin, red patches, swelling, rough patches",Eczema,LOW
+"heartburn, dark stool, vomiting, bloating",Peptic Ulcer,MEDIUM
+"dry skin, cracking, blisters",Dermatitis,LOW
+"muscle pain, weakness, bruising, swelling, muscle spasms",Muscle Strain,LOW
+loss of height and joint pain and back pain and stooped posture,Osteoporosis,MEDIUM
+swollen ankles and frequent urination and foamy urine and muscle cramps and fatigue,Kidney Disease,HIGH
+fatigue persistent cough mucus production chest discomfort mild fever,Bronchitis,MEDIUM
+"rough patches, swelling, cracked skin, itchy skin, red patches, dry skin",Eczema,LOW
+"fatigue, persistent cough, fever",Tuberculosis,HIGH
+"red spots, loss of appetite, headache, fever, blisters",Chickenpox,MEDIUM
+whiteheads skin inflammation oily skin blackheads,Acne,LOW
+muscle weakness and dry skin and constipation and weight gain,Hypothyroidism,MEDIUM
+nosebleeds chest pain dizziness shortness of breath,Hypertension,HIGH
+vision problems chest pain headache shortness of breath,Hypertension,HIGH
+stiffness and fatigue and swelling and redness around joints and reduced range of motion,Arthritis,MEDIUM
+"high fever, chills, fatigue, sore throat",Influenza (Flu),MEDIUM
+scarring and whiteheads and pimples and blackheads,Acne,LOW
+swollen legs and fatigue and chest pain and shortness of breath and dizziness and irregular heartbeat,Heart Disease,HIGH
+"stooped posture, loss of height, joint pain, bone fractures, weakness, back pain",Osteoporosis,MEDIUM
+persistent cough and mucus production and mild fever,Bronchitis,MEDIUM
+abdominal pain and fatigue and dark urine,Hepatitis,HIGH
+chest discomfort persistent cough fatigue shortness of breath,Bronchitis,MEDIUM
+shortness of breath and swollen legs and fatigue and irregular heartbeat and chest pain,Heart Disease,HIGH
+"rough patches, cracked skin, dry skin, red patches",Eczema,LOW
+confusion nausea rapid heartbeat,Heat Stroke,HIGH
+increased thirst and frequent urination and fatigue and slow healing wounds and weight loss,Diabetes,HIGH
+muscle weakness and dry skin and weight gain and cold sensitivity and constipation and depression,Hypothyroidism,MEDIUM
+"weakness, cold hands, headache, shortness of breath",Anemia,MEDIUM
+spinning sensation dizziness vomiting nausea headache balance problems,Vertigo,MEDIUM
+"muscle pain, pain behind eyes, rash, severe headache, bleeding gums, high fever",Dengue,HIGH
+fatigue swollen salivary glands pain while chewing muscle aches fever headache,Mumps,MEDIUM
+nausea and weight loss and heartburn and bloating and dark stool and stomach pain,Peptic Ulcer,MEDIUM
+"fatigue, excessive worry, restlessness",Anxiety Disorder,MEDIUM
+"sweating, fatigue, chills, muscle pain",Malaria,HIGH
+persistent sadness appetite changes difficulty concentrating sleep problems loss of interest,Depression,MEDIUM
+chest tightness coughing at night difficulty breathing,Asthma,MEDIUM
+persistent cough shortness of breath mild fever fatigue,Bronchitis,MEDIUM
+frequent urination strong urine odor pelvic pain fever,Urinary Tract Infection,MEDIUM
+"frequent urination, blurred vision, increased thirst, slow healing wounds",Diabetes,HIGH
+visual disturbances sensitivity to sound severe headache sensitivity to light vomiting nausea,Migraine,LOW
+runny nose nasal congestion watery eyes itchy throat itchy nose,Allergic Rhinitis,LOW
+severe abdominal pain vomiting loss of appetite constipation nausea fever,Appendicitis,HIGH
+ring-shaped rash itching redness cracking skin,Fungal Infection,LOW
+reduced range of motion swelling stiffness joint pain redness around joints,Arthritis,MEDIUM
+itchy skin cracked skin red patches,Eczema,LOW
+hives and dizziness and stomach pain and difficulty breathing,Food Allergy,MEDIUM
+dehydration vomiting stomach pain nausea diarrhea,Food Poisoning,MEDIUM
+eye pain halos around lights blurred vision vision loss headache nausea,Glaucoma,HIGH
+muscle aches and headache and fever and loss of appetite and fatigue,Mumps,MEDIUM
+strong urine odor fever cloudy urine,Urinary Tract Infection,MEDIUM
+headache high body temperature nausea rapid heartbeat red skin confusion,Heat Stroke,HIGH
+headache and waking up at night and irritability,Insomnia,LOW
+coughing at night chest tightness wheezing shortness of breath rapid breathing difficulty breathing,Asthma,MEDIUM
+vomiting headache high fever fatigue muscle pain,Malaria,HIGH
+"chest pain, sour taste, regurgitation, bloating",Acid Reflux (GERD),LOW
+"headache, dry skin, dry mouth, thirst, fatigue",Dehydration,MEDIUM
+pain while chewing and fatigue and headache and fever and loss of appetite,Mumps,MEDIUM
+shortness of breath nosebleeds dizziness vision problems headache chest pain,Hypertension,HIGH
+"red eyes, watery eyes, itchy eyes, discharge from eyes",Conjunctivitis,LOW
+"muscle pain, high fever, vomiting, fatigue, chills",Malaria,HIGH
+weight loss and blurred vision and increased thirst,Diabetes,HIGH
+"loss of appetite, dark urine, fatigue",Hepatitis,HIGH
+constipation and bloating and gas and abdominal pain,Irritable Bowel Syndrome,LOW
+"swelling, red patches, itchy skin, cracked skin, dry skin, rough patches",Eczema,LOW
+whiteheads blackheads oily skin skin inflammation pimples,Acne,LOW
+"rash, muscle pain, high fever, joint pain, severe headache",Dengue,HIGH
+"frequent urination, blood in urine, fatigue, swollen ankles",Kidney Disease,HIGH
+headache irritability daytime fatigue difficulty concentrating waking up at night,Insomnia,LOW
+"whiteheads, scarring, skin inflammation",Acne,LOW
+"severe pain in side, pain during urination, nausea, pink urine, vomiting",Kidney Stones,HIGH
+joint pain jaundice nausea abdominal pain,Hepatitis,HIGH
+"nausea, unconsciousness, high body temperature, red skin",Heat Stroke,HIGH
+headache swollen salivary glands fatigue muscle aches fever loss of appetite,Mumps,MEDIUM
+"high fever, difficulty breathing, sweating, cough with phlegm",Pneumonia,HIGH
+"bad breath, nasal congestion, headache, cough, runny nose, fever",Sinusitis,LOW
+"stomach pain, heartburn, vomiting",Peptic Ulcer,MEDIUM
+high fever body aches sore throat headache,Influenza (Flu),MEDIUM
+"mild fever, mucus production, chest discomfort, shortness of breath, persistent cough, fatigue",Bronchitis,MEDIUM
+"chest pain, difficulty breathing, fatigue, sweating, cough with phlegm, high fever",Pneumonia,HIGH
+"severe abdominal pain, fever, nausea",Appendicitis,HIGH
+sweating and weight loss and difficulty sleeping and tremors,Hyperthyroidism,MEDIUM
+vision problems nosebleeds chest pain dizziness,Hypertension,HIGH
+"itchy eyes, discharge from eyes, watery eyes, gritty feeling, red eyes",Conjunctivitis,LOW
+halos around lights eye pain nausea vision loss blurred vision headache,Glaucoma,HIGH
+"headache, difficulty concentrating, difficulty falling asleep, waking up at night",Insomnia,LOW
+"loss of appetite, fever, nausea, vomiting, constipation, severe abdominal pain",Appendicitis,HIGH
+"fever, strong urine odor, pelvic pain, burning urination",Urinary Tract Infection,MEDIUM
+shortness of breath headache cold hands weakness fatigue,Anemia,MEDIUM
+"swelling, redness around joints, joint pain, stiffness, reduced range of motion, fatigue",Arthritis,MEDIUM
+nausea and vomiting and dehydration and diarrhea and stomach cramps,Gastroenteritis,MEDIUM
+fatigue dizziness dry skin,Dehydration,MEDIUM
+vomiting headache nausea sweating,Malaria,HIGH
+itching stomach pain swelling,Food Allergy,MEDIUM
+"diarrhea, weakness, headache, rash, stomach pain, prolonged fever",Typhoid,HIGH
+swollen legs shortness of breath irregular heartbeat fatigue dizziness chest pain,Heart Disease,HIGH
+"swelling, weakness, muscle spasms, muscle pain, bruising, limited movement",Muscle Strain,LOW
+shortness of breath and fatigue and mucus production and persistent cough and mild fever,Bronchitis,MEDIUM
+discharge from eyes red eyes itchy eyes,Conjunctivitis,LOW
+skin inflammation and whiteheads and blackheads and pimples and scarring,Acne,LOW
+fatigue difficulty concentrating persistent sadness sleep problems appetite changes loss of interest,Depression,MEDIUM
+"redness around joints, stiffness, joint pain",Arthritis,MEDIUM
+swelling fatigue stiffness reduced range of motion,Arthritis,MEDIUM
+blood in urine muscle cramps fatigue swollen ankles foamy urine frequent urination,Kidney Disease,HIGH
+"bone fractures, joint pain, weakness, back pain",Osteoporosis,MEDIUM
+"nosebleeds, dizziness, headache, vision problems",Hypertension,HIGH
+bruising swelling muscle spasms muscle pain,Muscle Strain,LOW
+chest pain dizziness fatigue,Heart Disease,HIGH
+dizziness shortness of breath swollen legs chest pain irregular heartbeat fatigue,Heart Disease,HIGH
+fatigue dull headache neck pain,Tension Headache,LOW
+headache stomach pain diarrhea rash prolonged fever loss of appetite,Typhoid,HIGH
+"fever, weight loss, fatigue",Tuberculosis,HIGH
+"high body temperature, headache, red skin",Heat Stroke,HIGH
+blisters loss of appetite fever itchy rash headache red spots,Chickenpox,MEDIUM
+pressure around forehead dull headache tenderness on scalp neck pain fatigue,Tension Headache,LOW
+"constipation, loss of appetite, nausea, fever, severe abdominal pain, vomiting",Appendicitis,HIGH
+"nausea, constipation, severe abdominal pain, loss of appetite, fever, vomiting",Appendicitis,HIGH
+"irritability, daytime fatigue, difficulty concentrating, headache, waking up at night, difficulty falling asleep",Insomnia,LOW
+loss of height bone fractures stooped posture joint pain back pain weakness,Osteoporosis,MEDIUM
+"itchy rash, blisters, headache, fatigue, fever",Chickenpox,MEDIUM
+"back pain, joint pain, weakness",Osteoporosis,MEDIUM
+"pressure around forehead, fatigue, neck pain",Tension Headache,LOW
+"loss of appetite, swollen salivary glands, pain while chewing",Mumps,MEDIUM
+severe pain in side pain during urination vomiting,Kidney Stones,HIGH
+bad breath nasal congestion facial pain,Sinusitis,LOW
+sensitivity to light nausea visual disturbances sensitivity to sound severe headache vomiting,Migraine,LOW
+"neck pain, pressure around forehead, fatigue",Tension Headache,LOW
+swelling and hives and difficulty breathing and itching and stomach pain,Food Allergy,MEDIUM
+fatigue weight gain depression cold sensitivity dry skin,Hypothyroidism,MEDIUM
+"itching, difficulty breathing, dizziness",Food Allergy,MEDIUM
+"burning urination, strong urine odor, cloudy urine, fever, pelvic pain",Urinary Tract Infection,MEDIUM
+"joint pain, stiffness, reduced range of motion, swelling, fatigue",Arthritis,MEDIUM
+"regurgitation, chest pain, difficulty swallowing, sour taste, bloating",Acid Reflux (GERD),LOW
+dark stool stomach pain heartburn,Peptic Ulcer,MEDIUM
+anxiety loss of consciousness seizures confusion uncontrollable jerking staring spells,Epilepsy,HIGH
+"fatigue, pale skin, headache, dizziness, shortness of breath",Anemia,MEDIUM
+"dark stool, weight loss, heartburn",Peptic Ulcer,MEDIUM
+itchy skin blisters dry skin cracking swelling redness,Dermatitis,LOW
+"mild fever, shortness of breath, mucus production, chest discomfort, persistent cough",Bronchitis,MEDIUM
+headache body aches cough,Influenza (Flu),MEDIUM
+"fatigue, fever, muscle aches",Mumps,MEDIUM
+muscle spasms weakness limited movement swelling muscle pain bruising,Muscle Strain,LOW
+"swelling, rough patches, red patches, itchy skin",Eczema,LOW
+cloudy urine frequent urination burning urination pelvic pain fever,Urinary Tract Infection,MEDIUM
+oily skin and skin inflammation and scarring and pimples and blackheads and whiteheads,Acne,LOW
+nausea and dehydration and vomiting and stomach pain and fever,Food Poisoning,MEDIUM
+headache vision loss blurred vision nausea,Glaucoma,HIGH
+"blisters, fever, headache, red spots",Chickenpox,MEDIUM
+"fever, burning urination, frequent urination, cloudy urine, strong urine odor, pelvic pain",Urinary Tract Infection,MEDIUM
+shortness of breath and chest discomfort and fatigue and mild fever and persistent cough,Bronchitis,MEDIUM
+diarrhea and fever and headache and dehydration,Gastroenteritis,MEDIUM
+itchy throat watery eyes nasal congestion,Allergic Rhinitis,LOW
+cloudy urine fever burning urination pelvic pain strong urine odor,Urinary Tract Infection,MEDIUM
+"redness around joints, swelling, joint pain, stiffness, fatigue",Arthritis,MEDIUM
+"dizziness, pale skin, fatigue, headache",Anemia,MEDIUM
+weakness joint pain loss of height back pain stooped posture bone fractures,Osteoporosis,MEDIUM
+vomiting fever severe abdominal pain nausea loss of appetite constipation,Appendicitis,HIGH
+eye pain blurred vision vision loss,Glaucoma,HIGH
+increased thirst frequent urination weight loss slow healing wounds fatigue blurred vision,Diabetes,HIGH
+dizziness fatigue irregular heartbeat chest pain shortness of breath,Heart Disease,HIGH
+difficulty sleeping rapid heartbeat fatigue,Hyperthyroidism,MEDIUM
+fatigue and dry mouth and dizziness and dry skin,Dehydration,MEDIUM
+"fatigue, chills, high fever, difficulty breathing, cough with phlegm, sweating",Pneumonia,HIGH
+"red eyes, watery eyes, discharge from eyes, gritty feeling",Conjunctivitis,LOW
+mild fever watery eyes congestion,Common Cold,LOW
+"cracked skin, rough patches, itchy skin, dry skin, red patches",Eczema,LOW
+sensitivity to light visual disturbances vomiting sensitivity to sound nausea,Migraine,LOW
+halos around lights nausea headache,Glaucoma,HIGH
+muscle aches and headache and swollen salivary glands and fever and pain while chewing and fatigue,Mumps,MEDIUM
+nausea sensitivity to light severe headache,Migraine,LOW
+headache confusion nausea rapid heartbeat high body temperature,Heat Stroke,HIGH
+"itchy rash, fatigue, loss of appetite, headache",Chickenpox,MEDIUM
+itching red patches silvery scales thick nails burning dry cracked skin,Psoriasis,LOW
+headache high fever body aches fatigue sore throat,Influenza (Flu),MEDIUM
+cough chills runny nose body aches,Influenza (Flu),MEDIUM
+constipation and abdominal pain and cramping,Irritable Bowel Syndrome,LOW
+dizziness and fatigue and dark urine and dry skin and headache and thirst,Dehydration,MEDIUM
+chest pain heartburn sour taste difficulty swallowing regurgitation bloating,Acid Reflux (GERD),LOW
+"cold hands, headache, weakness, shortness of breath, fatigue",Anemia,MEDIUM
+mild fever runny nose congestion sneezing cough watery eyes,Common Cold,LOW
+weight loss and stomach pain and bloating and vomiting and heartburn and dark stool,Peptic Ulcer,MEDIUM
+"rash, red eyes, white spots in mouth, runny nose",Measles,MEDIUM
+"restlessness, difficulty concentrating, irritability, muscle tension, excessive worry",Anxiety Disorder,MEDIUM
+fatigue and dizziness and chest pain and irregular heartbeat and shortness of breath,Heart Disease,HIGH
+chest pain and fever and persistent cough and night sweats and fatigue,Tuberculosis,HIGH
+high fever vomiting muscle pain nausea,Malaria,HIGH
+mild fever fatigue persistent cough chest discomfort,Bronchitis,MEDIUM
+"wheezing, chest tightness, shortness of breath",Asthma,MEDIUM
+"shortness of breath, vision problems, dizziness, headache",Hypertension,HIGH
+"coughing at night, wheezing, shortness of breath, chest tightness",Asthma,MEDIUM
+unconsciousness headache confusion rapid heartbeat high body temperature red skin,Heat Stroke,HIGH
+"fatigue, restlessness, irritability, sleep problems, muscle tension",Anxiety Disorder,MEDIUM
+red eyes discharge from eyes sensitivity to light,Conjunctivitis,LOW
+nausea and balance problems and dizziness and vomiting and headache,Vertigo,MEDIUM
+weakness pale skin cold hands,Anemia,MEDIUM
+sensitivity to light white spots in mouth runny nose red eyes cough high fever,Measles,MEDIUM
+nausea headache eye pain blurred vision halos around lights vision loss,Glaucoma,HIGH
+sneezing runny nose watery eyes,Allergic Rhinitis,LOW
+mild fever runny nose sore throat congestion sneezing,Common Cold,LOW
+tremors anxiety rapid heartbeat,Hyperthyroidism,MEDIUM
+rash weakness prolonged fever loss of appetite diarrhea,Typhoid,HIGH
+difficulty breathing and shortness of breath and chest tightness and coughing at night,Asthma,MEDIUM
+"jaundice, fatigue, dark urine, joint pain, nausea, abdominal pain",Hepatitis,HIGH
+"visual disturbances, sensitivity to light, sensitivity to sound",Migraine,LOW
+muscle cramps and swollen ankles and foamy urine and fatigue,Kidney Disease,HIGH
+"excessive worry, sleep problems, fatigue, restlessness, muscle tension, difficulty concentrating",Anxiety Disorder,MEDIUM
+headache nausea vomiting balance problems,Vertigo,MEDIUM
+"redness, ring-shaped rash, burning sensation, itching, cracking skin, scaling",Fungal Infection,LOW
+balance problems vomiting headache dizziness,Vertigo,MEDIUM
+fatigue and blisters and headache,Chickenpox,MEDIUM
+fatigue night sweats persistent cough chest pain weight loss fever,Tuberculosis,HIGH
+"halos around lights, headache, blurred vision, eye pain, vision loss",Glaucoma,HIGH
+loss of appetite and constipation and fever,Appendicitis,HIGH
+headache fatigue pain while chewing loss of appetite muscle aches,Mumps,MEDIUM
+"watery eyes, sneezing, mild fever, runny nose, congestion",Common Cold,LOW
+bloating heartburn sour taste regurgitation,Acid Reflux (GERD),LOW
+swelling cracking blisters dry skin itchy skin,Dermatitis,LOW
+"shortness of breath, coughing at night, difficulty breathing, wheezing",Asthma,MEDIUM
+excessive worry sleep problems muscle tension,Anxiety Disorder,MEDIUM
+oily skin and blackheads and pimples and skin inflammation and whiteheads,Acne,LOW
+sleep problems restlessness irritability fatigue muscle tension,Anxiety Disorder,MEDIUM
+"abdominal pain, cramping, bloating, gas, diarrhea",Irritable Bowel Syndrome,LOW
+"nosebleeds, dizziness, chest pain",Hypertension,HIGH
+stomach pain and dark stool and weight loss,Peptic Ulcer,MEDIUM
+"increased thirst, slow healing wounds, fatigue",Diabetes,HIGH
+"visual disturbances, severe headache, vomiting",Migraine,LOW
+"severe headache, rash, high fever, bleeding gums",Dengue,HIGH
+constipation bloating cramping gas,Irritable Bowel Syndrome,LOW
+"difficulty breathing, hives, swelling",Food Allergy,MEDIUM
+hives difficulty breathing dizziness stomach pain itching nausea,Food Allergy,MEDIUM
+irritability and excessive worry and difficulty concentrating and fatigue and sleep problems and restlessness,Anxiety Disorder,MEDIUM
+"rash, sensitivity to light, cough, white spots in mouth, runny nose",Measles,MEDIUM
+weakness diarrhea prolonged fever rash,Typhoid,HIGH
+tenderness on scalp and fatigue and neck pain and pressure around forehead,Tension Headache,LOW
+loss of appetite and stomach pain and rash and diarrhea and headache and weakness,Typhoid,HIGH
+nasal congestion watery eyes itchy nose,Allergic Rhinitis,LOW
+muscle pain vomiting high fever chills,Malaria,HIGH
+congestion and runny nose and mild fever and cough and sneezing,Common Cold,LOW
+stomach cramps nausea dehydration fever vomiting diarrhea,Gastroenteritis,MEDIUM
+"swelling, itchy skin, rough patches, dry skin, cracked skin",Eczema,LOW
+joint pain muscle pain high fever bleeding gums,Dengue,HIGH
+"blisters, itchy rash, fever, headache, loss of appetite",Chickenpox,MEDIUM
+fatigue headache muscle pain nausea vomiting chills,Malaria,HIGH
+difficulty concentrating fatigue persistent sadness,Depression,MEDIUM
+swelling stomach pain dizziness,Food Allergy,MEDIUM
+fatigue cold hands weakness dizziness pale skin shortness of breath,Anemia,MEDIUM
+dry cracked skin and red patches and burning and thick nails and silvery scales and itching,Psoriasis,LOW
+"itchy nose, watery eyes, nasal congestion, runny nose, itchy throat, sneezing",Allergic Rhinitis,LOW
+"itching, red patches, burning, thick nails, silvery scales, dry cracked skin",Psoriasis,LOW
+skin inflammation scarring oily skin,Acne,LOW
+"fatigue, fever, headache, pain while chewing",Mumps,MEDIUM
+blackheads pimples whiteheads scarring,Acne,LOW
+"fatigue, weight loss, slow healing wounds, blurred vision, frequent urination",Diabetes,HIGH
+"bleeding gums, severe headache, joint pain, pain behind eyes, rash",Dengue,HIGH
+pain behind eyes and muscle pain and severe headache,Dengue,HIGH
+cramping abdominal pain bloating gas constipation,Irritable Bowel Syndrome,LOW
+sensitivity to sound and sensitivity to light and severe headache and nausea,Migraine,LOW
+sweating and anxiety and weight loss,Hyperthyroidism,MEDIUM
+bloating and dark stool and vomiting and nausea and weight loss and heartburn,Peptic Ulcer,MEDIUM
+shortness of breath and fatigue and chest discomfort and mucus production,Bronchitis,MEDIUM
+dehydration vomiting diarrhea stomach cramps,Gastroenteritis,MEDIUM
+dizziness chest pain shortness of breath irregular heartbeat fatigue,Heart Disease,HIGH
+"scaling, burning sensation, cracking skin",Fungal Infection,LOW
+sleep problems and fatigue and persistent sadness and loss of interest,Depression,MEDIUM
+cough and white spots in mouth and high fever,Measles,MEDIUM
+"vomiting, sensitivity to light, severe headache, sensitivity to sound, nausea, visual disturbances",Migraine,LOW
+itchy rash loss of appetite fever headache,Chickenpox,MEDIUM
+"frequent urination, increased thirst, slow healing wounds",Diabetes,HIGH
+nasal congestion and fever and facial pain and runny nose and headache,Sinusitis,LOW
+increased thirst slow healing wounds blurred vision,Diabetes,HIGH
+fatigue and dizziness and irregular heartbeat,Heart Disease,HIGH
+rapid heartbeat fatigue difficulty sleeping weight loss tremors sweating,Hyperthyroidism,MEDIUM
+"redness, cracking skin, itching, burning sensation, scaling",Fungal Infection,LOW
+mild fever watery eyes congestion cough sore throat runny nose,Common Cold,LOW
+"swollen legs, irregular heartbeat, fatigue",Heart Disease,HIGH
+"blurred vision, weight loss, increased thirst, slow healing wounds",Diabetes,HIGH
+"itchy skin, rough patches, dry skin",Eczema,LOW
+"frequent urination, swollen ankles, blood in urine, muscle cramps, foamy urine",Kidney Disease,HIGH
+"fatigue, muscle aches, headache, pain while chewing, loss of appetite, swollen salivary glands",Mumps,MEDIUM
+"headache, stomach pain, rash",Typhoid,HIGH
+"confusion, loss of consciousness, anxiety",Epilepsy,HIGH
+stomach pain dehydration fever weakness vomiting,Food Poisoning,MEDIUM
+cough and nasal congestion and headache and fever,Sinusitis,LOW
+balance problems and spinning sensation and dizziness,Vertigo,MEDIUM
+"vomiting, fatigue, sweating, chills, high fever, muscle pain",Malaria,HIGH
+cracked skin swelling red patches dry skin rough patches itchy skin,Eczema,LOW
+halos around lights nausea eye pain vision loss blurred vision headache,Glaucoma,HIGH
+"difficulty breathing, chest tightness, coughing at night, wheezing, rapid breathing",Asthma,MEDIUM
+sneezing runny nose itchy throat nasal congestion watery eyes itchy nose,Allergic Rhinitis,LOW
+"difficulty swallowing, heartburn, sour taste, chest pain, bloating, regurgitation",Acid Reflux (GERD),LOW
+nausea jaundice loss of appetite,Hepatitis,HIGH
+itchy eyes and watery eyes and discharge from eyes,Conjunctivitis,LOW
+chest discomfort and persistent cough and mucus production and fatigue and mild fever and shortness of breath,Bronchitis,MEDIUM
+headache and vision problems and dizziness and nosebleeds,Hypertension,HIGH
+"runny nose, facial pain, bad breath, cough, fever, nasal congestion",Sinusitis,LOW
+"irregular heartbeat, dizziness, fatigue, shortness of breath, chest pain, swollen legs",Heart Disease,HIGH
+sweating and fatigue and muscle pain and high fever and nausea,Malaria,HIGH
+"pale skin, headache, shortness of breath, cold hands, weakness, fatigue",Anemia,MEDIUM
+"fever, nausea, diarrhea, vomiting",Gastroenteritis,MEDIUM
+high fever fatigue vomiting nausea muscle pain,Malaria,HIGH
+"scarring, blackheads, oily skin, skin inflammation, whiteheads, pimples",Acne,LOW
+fever cough bad breath headache,Sinusitis,LOW
+"bleeding gums, pain behind eyes, muscle pain, high fever, rash, severe headache",Dengue,HIGH
+nausea dehydration weakness stomach pain,Food Poisoning,MEDIUM
+fatigue high fever cough body aches,Influenza (Flu),MEDIUM
+loss of interest persistent sadness difficulty concentrating,Depression,MEDIUM
+bloating heartburn difficulty swallowing regurgitation sour taste chest pain,Acid Reflux (GERD),LOW
+spinning sensation dizziness balance problems nausea,Vertigo,MEDIUM
+nausea pain during urination vomiting frequent urination pink urine severe pain in side,Kidney Stones,HIGH
+dehydration and diarrhea and nausea,Food Poisoning,MEDIUM
+"increased thirst, blurred vision, weight loss, slow healing wounds, fatigue",Diabetes,HIGH
+"headache, dehydration, stomach cramps, diarrhea, nausea, vomiting",Gastroenteritis,MEDIUM
+"diarrhea, dehydration, weakness, stomach pain, vomiting",Food Poisoning,MEDIUM
+watery eyes sore throat cough mild fever congestion,Common Cold,LOW
+dry skin and fatigue and muscle weakness and depression,Hypothyroidism,MEDIUM
+"weakness, rash, loss of appetite",Typhoid,HIGH
+"chest discomfort, mild fever, shortness of breath",Bronchitis,MEDIUM
+vision loss halos around lights blurred vision eye pain nausea headache,Glaucoma,HIGH
+"waking up at night, irritability, difficulty concentrating",Insomnia,LOW
+cramping bloating diarrhea constipation abdominal pain,Irritable Bowel Syndrome,LOW
+vomiting nausea fever stomach cramps headache diarrhea,Gastroenteritis,MEDIUM
+"restlessness, excessive worry, difficulty concentrating",Anxiety Disorder,MEDIUM
+"abdominal pain, constipation, diarrhea, bloating, cramping",Irritable Bowel Syndrome,LOW
+"cramping, constipation, bloating, diarrhea, abdominal pain",Irritable Bowel Syndrome,LOW
+"watery eyes, itchy throat, itchy nose, sneezing, nasal congestion, runny nose",Allergic Rhinitis,LOW
+"white spots in mouth, red eyes, cough",Measles,MEDIUM
+headache and nasal congestion and bad breath,Sinusitis,LOW
+confusion unconsciousness nausea headache rapid heartbeat high body temperature,Heat Stroke,HIGH
+difficulty concentrating sleep problems loss of interest,Depression,MEDIUM
+bloating sour taste regurgitation chest pain,Acid Reflux (GERD),LOW
+chest pain and difficulty breathing and cough with phlegm and fatigue and chills and sweating,Pneumonia,HIGH
+bruising swelling muscle spasms limited movement weakness,Muscle Strain,LOW
+"fatigue, night sweats, coughing blood, weight loss",Tuberculosis,HIGH
+skin inflammation whiteheads scarring oily skin blackheads,Acne,LOW
+"chest pain, cough with phlegm, fatigue, chills, sweating",Pneumonia,HIGH
+"anxiety, staring spells, confusion, seizures, uncontrollable jerking, loss of consciousness",Epilepsy,HIGH
+joint pain muscle pain high fever,Dengue,HIGH
+"depression, cold sensitivity, muscle weakness",Hypothyroidism,MEDIUM
+nausea confusion headache high body temperature red skin rapid heartbeat,Heat Stroke,HIGH
+"cough, body aches, runny nose, high fever",Influenza (Flu),MEDIUM
+stomach pain rash weakness prolonged fever,Typhoid,HIGH
+loss of appetite fever muscle aches pain while chewing headache,Mumps,MEDIUM
+"fever, headache, fatigue, pain while chewing, swollen salivary glands, muscle aches",Mumps,MEDIUM
+blisters and redness and itchy skin and swelling and dry skin and cracking,Dermatitis,LOW
+weakness swelling muscle pain muscle spasms limited movement bruising,Muscle Strain,LOW
+itchy nose and itchy throat and nasal congestion and watery eyes and runny nose,Allergic Rhinitis,LOW
+weakness shortness of breath headache,Anemia,MEDIUM
+"high fever, chills, difficulty breathing, cough with phlegm, sweating",Pneumonia,HIGH
+runny nose and white spots in mouth and high fever and sensitivity to light and rash and cough,Measles,MEDIUM
+rash cough runny nose sensitivity to light,Measles,MEDIUM
+sneezing nasal congestion watery eyes runny nose itchy nose itchy throat,Allergic Rhinitis,LOW
+fatigue difficulty concentrating excessive worry muscle tension,Anxiety Disorder,MEDIUM
+nausea and jaundice and joint pain and abdominal pain and dark urine,Hepatitis,HIGH
+difficulty concentrating irritability difficulty falling asleep headache waking up at night,Insomnia,LOW
+"slow healing wounds, frequent urination, blurred vision, fatigue, increased thirst, weight loss",Diabetes,HIGH
+"muscle spasms, bruising, weakness, swelling, muscle pain",Muscle Strain,LOW
+burning urination cloudy urine pelvic pain frequent urination,Urinary Tract Infection,MEDIUM
+"rash, high fever, white spots in mouth, runny nose, sensitivity to light, red eyes",Measles,MEDIUM
+joint pain rash high fever,Dengue,HIGH
+sore throat congestion runny nose,Common Cold,LOW
+"blurred vision, frequent urination, fatigue, increased thirst, weight loss, slow healing wounds",Diabetes,HIGH
+"itchy rash, fever, red spots, fatigue, headache, blisters",Chickenpox,MEDIUM
+burning and itching and red patches and silvery scales,Psoriasis,LOW
+sweating and muscle pain and high fever,Malaria,HIGH
+"tenderness on scalp, neck pain, fatigue, pressure around forehead",Tension Headache,LOW
+"chest tightness, shortness of breath, difficulty breathing, wheezing, coughing at night, rapid breathing",Asthma,MEDIUM
+persistent cough chest discomfort fatigue,Bronchitis,MEDIUM
+redness ring-shaped rash itching scaling cracking skin burning sensation,Fungal Infection,LOW
+jaundice dark urine abdominal pain,Hepatitis,HIGH
+"dizziness, chest pain, vision problems, nosebleeds, shortness of breath, headache",Hypertension,HIGH
+dull headache tenderness on scalp neck pain fatigue,Tension Headache,LOW
+"sensitivity to light, vomiting, visual disturbances, severe headache, nausea, sensitivity to sound",Migraine,LOW
+joint pain pain behind eyes bleeding gums severe headache,Dengue,HIGH
+loss of appetite jaundice dark urine,Hepatitis,HIGH
+watery eyes mild fever runny nose sneezing,Common Cold,LOW
+"regurgitation, chest pain, difficulty swallowing",Acid Reflux (GERD),LOW
+dull headache and tenderness on scalp and neck pain and pressure around forehead,Tension Headache,LOW
+"sensitivity to light, itchy eyes, red eyes, gritty feeling, watery eyes, discharge from eyes",Conjunctivitis,LOW
+"cracking, redness, dry skin, itchy skin, blisters",Dermatitis,LOW
+gas cramping bloating,Irritable Bowel Syndrome,LOW
+dry cracked skin and thick nails and red patches and itching,Psoriasis,LOW
+headache and dry skin and dizziness and fatigue and thirst and dark urine,Dehydration,MEDIUM
+swelling redness around joints joint pain,Arthritis,MEDIUM
+rough patches swelling cracked skin itchy skin red patches dry skin,Eczema,LOW
+"whiteheads, blackheads, pimples, oily skin, skin inflammation, scarring",Acne,LOW
+redness and ring-shaped rash and itching and burning sensation and scaling,Fungal Infection,LOW
+diarrhea dehydration weakness vomiting fever,Food Poisoning,MEDIUM
+"back pain, joint pain, loss of height, stooped posture",Osteoporosis,MEDIUM
+"loss of height, back pain, weakness",Osteoporosis,MEDIUM
+"pimples, whiteheads, skin inflammation, scarring",Acne,LOW
+fatigue and blood in urine and muscle cramps and foamy urine and frequent urination and swollen ankles,Kidney Disease,HIGH
+dizziness and headache and balance problems and nausea,Vertigo,MEDIUM
+fever vomiting weakness dehydration nausea,Food Poisoning,MEDIUM
+constipation and nausea and severe abdominal pain,Appendicitis,HIGH
+"scaling, burning sensation, cracking skin, itching, ring-shaped rash",Fungal Infection,LOW
+sensitivity to light and discharge from eyes and red eyes and gritty feeling and itchy eyes,Conjunctivitis,LOW
+weakness and loss of height and joint pain and bone fractures,Osteoporosis,MEDIUM
+"neck pain, dull headache, fatigue, pressure around forehead",Tension Headache,LOW
+anxiety confusion uncontrollable jerking,Epilepsy,HIGH
+"mild fever, fatigue, persistent cough, mucus production, chest discomfort, shortness of breath",Bronchitis,MEDIUM
+persistent cough fever night sweats chest pain,Tuberculosis,HIGH
+whiteheads and scarring and oily skin,Acne,LOW
+"fatigue, headache, dizziness",Dehydration,MEDIUM
+headache vomiting balance problems spinning sensation dizziness nausea,Vertigo,MEDIUM
+"coughing blood, weight loss, fever",Tuberculosis,HIGH
+"coughing blood, fatigue, persistent cough, night sweats, chest pain, fever",Tuberculosis,HIGH
+anxiety seizures staring spells loss of consciousness,Epilepsy,HIGH
+pain while chewing fever swollen salivary glands fatigue,Mumps,MEDIUM
+"rash, high fever, joint pain, pain behind eyes",Dengue,HIGH
+seizures confusion uncontrollable jerking staring spells anxiety,Epilepsy,HIGH
+coughing at night shortness of breath wheezing chest tightness difficulty breathing rapid breathing,Asthma,MEDIUM
+"itchy throat, itchy nose, watery eyes, runny nose, sneezing, nasal congestion",Allergic Rhinitis,LOW
+coughing at night and difficulty breathing and shortness of breath,Asthma,MEDIUM
+cold hands dizziness fatigue,Anemia,MEDIUM
+"headache, high body temperature, unconsciousness, red skin, rapid heartbeat, confusion",Heat Stroke,HIGH
+"sneezing, itchy nose, itchy throat, nasal congestion, runny nose, watery eyes",Allergic Rhinitis,LOW
+"itchy throat, runny nose, watery eyes, sneezing, itchy nose, nasal congestion",Allergic Rhinitis,LOW
+"itchy skin, blisters, dry skin, swelling, cracking, redness",Dermatitis,LOW
+"scarring, whiteheads, pimples, blackheads",Acne,LOW
+swelling and blisters and dry skin,Dermatitis,LOW
+"coughing at night, wheezing, rapid breathing, difficulty breathing, shortness of breath",Asthma,MEDIUM
+"sneezing, mild fever, runny nose, sore throat, cough, congestion",Common Cold,LOW
+"vomiting, spinning sensation, dizziness, balance problems, headache, nausea",Vertigo,MEDIUM
+loss of appetite fatigue fever,Mumps,MEDIUM
+high fever and difficulty breathing and chills and chest pain and sweating,Pneumonia,HIGH
+"high fever, sweating, cough with phlegm, chest pain, difficulty breathing, chills",Pneumonia,HIGH
+fatigue shortness of breath pale skin weakness headache dizziness,Anemia,MEDIUM
+"weakness, fever, vomiting, diarrhea",Food Poisoning,MEDIUM
+loss of appetite fatigue fever,Chickenpox,MEDIUM
+"frequent urination, muscle cramps, swollen ankles, fatigue, blood in urine, foamy urine",Kidney Disease,HIGH
+"blackheads, scarring, skin inflammation",Acne,LOW
+cold sensitivity weight gain fatigue,Hypothyroidism,MEDIUM
+chest pain fatigue fever coughing blood weight loss persistent cough,Tuberculosis,HIGH
+muscle pain chills fatigue,Malaria,HIGH
+vomiting and fever and diarrhea and weakness and stomach pain,Food Poisoning,MEDIUM
+severe headache bleeding gums rash muscle pain,Dengue,HIGH
+staring spells uncontrollable jerking anxiety loss of consciousness seizures,Epilepsy,HIGH
+"blood in urine, frequent urination, muscle cramps, fatigue, swollen ankles, foamy urine",Kidney Disease,HIGH
+sensitivity to light discharge from eyes itchy eyes gritty feeling red eyes watery eyes,Conjunctivitis,LOW
+"swelling, muscle spasms, limited movement, bruising, weakness, muscle pain",Muscle Strain,LOW
+dehydration stomach pain weakness diarrhea fever,Food Poisoning,MEDIUM
+"nausea, spinning sensation, dizziness, balance problems, vomiting",Vertigo,MEDIUM
+headache vision loss blurred vision eye pain halos around lights nausea,Glaucoma,HIGH
+"fatigue, restlessness, difficulty concentrating",Anxiety Disorder,MEDIUM
+headache dry mouth dry skin dark urine,Dehydration,MEDIUM
+muscle pain swelling weakness limited movement,Muscle Strain,LOW
+"spinning sensation, nausea, balance problems, dizziness",Vertigo,MEDIUM
+itching dizziness hives swelling,Food Allergy,MEDIUM
+constipation weight gain fatigue cold sensitivity muscle weakness dry skin,Hypothyroidism,MEDIUM
+"loss of appetite, severe abdominal pain, constipation, vomiting, nausea, fever",Appendicitis,HIGH
+headache and swollen salivary glands and muscle aches and fatigue and loss of appetite and pain while chewing,Mumps,MEDIUM
+pale skin cold hands shortness of breath weakness dizziness fatigue,Anemia,MEDIUM
+cough runny nose sore throat,Common Cold,LOW
+"cold hands, dizziness, weakness, shortness of breath",Anemia,MEDIUM
+cold sensitivity and constipation and weight gain,Hypothyroidism,MEDIUM
+"diarrhea, bloating, cramping",Irritable Bowel Syndrome,LOW
+"diarrhea, dehydration, vomiting, stomach pain",Food Poisoning,MEDIUM
+"high body temperature, nausea, red skin, unconsciousness",Heat Stroke,HIGH
+chills and high fever and headache,Influenza (Flu),MEDIUM
+sensitivity to sound visual disturbances sensitivity to light nausea severe headache,Migraine,LOW
+back pain and joint pain and loss of height and weakness,Osteoporosis,MEDIUM
+foamy urine and blood in urine and swollen ankles and fatigue,Kidney Disease,HIGH
+"severe headache, sensitivity to sound, nausea, visual disturbances, vomiting",Migraine,LOW
+"chills, sweating, high fever, nausea",Malaria,HIGH
+itchy skin and dry skin and rough patches and cracked skin and swelling,Eczema,LOW
+strong urine odor cloudy urine frequent urination burning urination pelvic pain,Urinary Tract Infection,MEDIUM
+"stomach pain, bloating, dark stool, nausea, weight loss, vomiting",Peptic Ulcer,MEDIUM
+"cracking skin, scaling, redness, burning sensation, ring-shaped rash, itching",Fungal Infection,LOW
+difficulty breathing shortness of breath rapid breathing,Asthma,MEDIUM
+swelling and red patches and cracked skin and itchy skin and rough patches,Eczema,LOW
+mild fever fatigue shortness of breath persistent cough mucus production chest discomfort,Bronchitis,MEDIUM
+redness cracking skin itching scaling burning sensation ring-shaped rash,Fungal Infection,LOW
+"chest pain, nosebleeds, shortness of breath",Hypertension,HIGH
+"pink urine, vomiting, frequent urination, nausea",Kidney Stones,HIGH
+"headache, muscle pain, high fever",Malaria,HIGH
+"nausea, headache, dehydration",Gastroenteritis,MEDIUM
+"persistent cough, shortness of breath, mucus production, chest discomfort, mild fever, fatigue",Bronchitis,MEDIUM
+fatigue sweating rapid heartbeat tremors,Hyperthyroidism,MEDIUM
+rash muscle pain high fever pain behind eyes joint pain,Dengue,HIGH
+chest pain regurgitation difficulty swallowing sour taste bloating,Acid Reflux (GERD),LOW
+joint pain and nausea and jaundice,Hepatitis,HIGH
+gas bloating constipation cramping,Irritable Bowel Syndrome,LOW
+headache red spots loss of appetite blisters,Chickenpox,MEDIUM
+"fatigue, fever, persistent cough, night sweats, chest pain",Tuberculosis,HIGH
+itching and nausea and dizziness,Food Allergy,MEDIUM
+cough and sensitivity to light and rash and runny nose,Measles,MEDIUM
+burning urination fever strong urine odor pelvic pain frequent urination,Urinary Tract Infection,MEDIUM
+skin inflammation oily skin whiteheads pimples,Acne,LOW
+fever cough headache,Sinusitis,LOW
+"chest pain, persistent cough, weight loss, coughing blood, fever, fatigue",Tuberculosis,HIGH
+weakness rash headache prolonged fever,Typhoid,HIGH
+limited movement swelling bruising weakness muscle spasms,Muscle Strain,LOW
+fatigue and chest pain and chills and difficulty breathing,Pneumonia,HIGH
+"fatigue, muscle cramps, blood in urine",Kidney Disease,HIGH
+"nausea, blurred vision, eye pain",Glaucoma,HIGH
+"dull headache, pressure around forehead, tenderness on scalp, neck pain, fatigue",Tension Headache,LOW
+fatigue and joint pain and jaundice and nausea and abdominal pain and dark urine,Hepatitis,HIGH
+"chills, fatigue, cough with phlegm, chest pain, sweating, difficulty breathing",Pneumonia,HIGH
+sensitivity to sound vomiting sensitivity to light visual disturbances severe headache,Migraine,LOW
+regurgitation and heartburn and sour taste and difficulty swallowing,Acid Reflux (GERD),LOW
+red skin unconsciousness headache confusion rapid heartbeat nausea,Heat Stroke,HIGH
+"pelvic pain, fever, strong urine odor",Urinary Tract Infection,MEDIUM
+weight loss and difficulty sleeping and fatigue and tremors,Hyperthyroidism,MEDIUM
+"nausea, loss of appetite, abdominal pain, fatigue",Hepatitis,HIGH
+severe headache and high fever and joint pain,Dengue,HIGH
+back pain weakness joint pain bone fractures,Osteoporosis,MEDIUM
+swollen legs dizziness chest pain shortness of breath irregular heartbeat fatigue,Heart Disease,HIGH
+"vomiting, visual disturbances, sensitivity to sound, severe headache, sensitivity to light",Migraine,LOW
+"dark urine, headache, dry skin",Dehydration,MEDIUM
+fever diarrhea dehydration,Gastroenteritis,MEDIUM
+"fever, nasal congestion, bad breath, headache, facial pain, cough",Sinusitis,LOW
+"excessive worry, difficulty concentrating, restlessness, irritability, fatigue, sleep problems",Anxiety Disorder,MEDIUM
+"fatigue, sweating, difficulty breathing, high fever, chest pain",Pneumonia,HIGH
+sensitivity to sound and severe headache and visual disturbances and sensitivity to light and vomiting,Migraine,LOW
+"itchy nose, sneezing, runny nose, watery eyes, itchy throat, nasal congestion",Allergic Rhinitis,LOW
+"nausea, stomach cramps, headache, dehydration, vomiting, diarrhea",Gastroenteritis,MEDIUM
+loss of appetite and diarrhea and stomach pain and headache and rash and weakness,Typhoid,HIGH
+spinning sensation balance problems headache dizziness,Vertigo,MEDIUM
+scaling redness burning sensation itching,Fungal Infection,LOW
+shortness of breath dizziness cold hands weakness fatigue,Anemia,MEDIUM
+cough and mild fever and sneezing and runny nose and sore throat and watery eyes,Common Cold,LOW
+headache and difficulty concentrating and waking up at night,Insomnia,LOW
+"difficulty concentrating, muscle tension, sleep problems, fatigue",Anxiety Disorder,MEDIUM
+"waking up at night, difficulty falling asleep, headache, difficulty concentrating, daytime fatigue",Insomnia,LOW
+staring spells loss of consciousness seizures confusion,Epilepsy,HIGH
+pain while chewing muscle aches loss of appetite fatigue,Mumps,MEDIUM
+burning sensation cracking skin scaling redness itching ring-shaped rash,Fungal Infection,LOW
+cough runny nose body aches chills sore throat high fever,Influenza (Flu),MEDIUM
+"diarrhea, fever, stomach pain, nausea",Food Poisoning,MEDIUM
+severe abdominal pain and nausea and loss of appetite and fever and vomiting and constipation,Appendicitis,HIGH
+pelvic pain burning urination frequent urination cloudy urine strong urine odor,Urinary Tract Infection,MEDIUM
+joint pain and bone fractures and weakness and back pain and loss of height and stooped posture,Osteoporosis,MEDIUM
+weight gain muscle weakness constipation depression fatigue cold sensitivity,Hypothyroidism,MEDIUM
+pink urine and nausea and severe pain in side,Kidney Stones,HIGH
+diarrhea fever nausea dehydration headache vomiting,Gastroenteritis,MEDIUM
+dizziness shortness of breath chest pain headache nosebleeds vision problems,Hypertension,HIGH
+"itchy skin, swelling, redness",Dermatitis,LOW
+red patches silvery scales thick nails itching,Psoriasis,LOW
+weight gain constipation cold sensitivity muscle weakness,Hypothyroidism,MEDIUM
+mild fever runny nose congestion,Common Cold,LOW
+"nasal congestion, runny nose, cough, facial pain",Sinusitis,LOW
+weakness headache shortness of breath pale skin,Anemia,MEDIUM
+nausea fever severe abdominal pain loss of appetite constipation vomiting,Appendicitis,HIGH
+fatigue reduced range of motion joint pain,Arthritis,MEDIUM
+dark urine thirst headache dizziness fatigue dry mouth,Dehydration,MEDIUM
+"heartburn, bloating, sour taste",Acid Reflux (GERD),LOW
+fatigue persistent cough coughing blood fever chest pain night sweats,Tuberculosis,HIGH
+itchy skin swelling dry skin redness cracking,Dermatitis,LOW
+dry skin itchy skin redness,Dermatitis,LOW
+"chest pain, difficulty swallowing, regurgitation",Acid Reflux (GERD),LOW
+chest pain fatigue irregular heartbeat dizziness,Heart Disease,HIGH
+fatigue and muscle weakness and constipation and cold sensitivity,Hypothyroidism,MEDIUM
+"blurred vision, slow healing wounds, weight loss",Diabetes,HIGH
+weight loss anxiety sweating,Hyperthyroidism,MEDIUM
+"bruising, weakness, muscle spasms, swelling, muscle pain, limited movement",Muscle Strain,LOW
+"dark urine, fatigue, dizziness, dry skin, headache",Dehydration,MEDIUM
+"white spots in mouth, cough, sensitivity to light, runny nose, high fever, rash",Measles,MEDIUM
+unconsciousness and rapid heartbeat and red skin and confusion and high body temperature and nausea,Heat Stroke,HIGH
+"cough with phlegm, difficulty breathing, chest pain, sweating, fatigue",Pneumonia,HIGH
+eye pain and halos around lights and headache and nausea and blurred vision,Glaucoma,HIGH
+dehydration and vomiting and fever,Gastroenteritis,MEDIUM
+severe pain in side frequent urination vomiting nausea pink urine,Kidney Stones,HIGH
+diarrhea dehydration fever,Food Poisoning,MEDIUM
+runny nose congestion mild fever watery eyes sore throat sneezing,Common Cold,LOW
+sensitivity to light rash cough,Measles,MEDIUM
+chest pain high fever fatigue,Pneumonia,HIGH
+dizziness and thirst and dry mouth and headache and dry skin and fatigue,Dehydration,MEDIUM
+stomach pain nausea hives,Food Allergy,MEDIUM
+"cough, sensitivity to light, red eyes, rash",Measles,MEDIUM
+stomach pain and dizziness and hives,Food Allergy,MEDIUM
+loss of appetite and headache and red spots,Chickenpox,MEDIUM
+"dizziness, chest pain, vision problems, headache",Hypertension,HIGH
+blurred vision fatigue increased thirst frequent urination,Diabetes,HIGH
+blood in urine swollen ankles muscle cramps frequent urination fatigue foamy urine,Kidney Disease,HIGH
+"constipation, gas, diarrhea, abdominal pain",Irritable Bowel Syndrome,LOW
+"sore throat, chills, runny nose, fatigue",Influenza (Flu),MEDIUM
+swelling stomach pain dizziness,Food Allergy,MEDIUM
+"headache, fatigue, high fever, chills, vomiting, muscle pain",Malaria,HIGH
+dizziness swelling nausea,Food Allergy,MEDIUM
+fatigue tenderness on scalp dull headache,Tension Headache,LOW
+diarrhea abdominal pain bloating constipation,Irritable Bowel Syndrome,LOW
+"sore throat, cough, runny nose, headache, fatigue, body aches",Influenza (Flu),MEDIUM
+"headache, thirst, dry mouth, dizziness, dark urine",Dehydration,MEDIUM
+"neck pain, fatigue, tenderness on scalp, dull headache, pressure around forehead",Tension Headache,LOW
+"headache, prolonged fever, loss of appetite, stomach pain, diarrhea",Typhoid,HIGH
+"dry skin, headache, thirst, dark urine, dry mouth",Dehydration,MEDIUM
+"frequent urination, vomiting, nausea, pink urine, severe pain in side, pain during urination",Kidney Stones,HIGH
+slow healing wounds and frequent urination and weight loss and fatigue and increased thirst,Diabetes,HIGH
+"pink urine, nausea, vomiting, pain during urination, severe pain in side",Kidney Stones,HIGH
+"regurgitation, heartburn, sour taste, chest pain, difficulty swallowing",Acid Reflux (GERD),LOW
+"frequent urination, nausea, pain during urination, severe pain in side, pink urine, vomiting",Kidney Stones,HIGH
+muscle cramps and swollen ankles and fatigue and foamy urine and blood in urine,Kidney Disease,HIGH
+sensitivity to light and rash and red eyes and runny nose and high fever,Measles,MEDIUM
+"fatigue, thirst, headache",Dehydration,MEDIUM
+fever and cloudy urine and strong urine odor and frequent urination and pelvic pain and burning urination,Urinary Tract Infection,MEDIUM
+silvery scales red patches dry cracked skin itching,Psoriasis,LOW
+"dry skin, dizziness, dark urine",Dehydration,MEDIUM
+fever and dehydration and weakness and nausea and diarrhea,Food Poisoning,MEDIUM
+headache blurred vision halos around lights eye pain,Glaucoma,HIGH
+"headache, stomach cramps, diarrhea, dehydration, fever",Gastroenteritis,MEDIUM
+headache irritability difficulty concentrating waking up at night daytime fatigue,Insomnia,LOW
+"red skin, confusion, headache, high body temperature, nausea, unconsciousness",Heat Stroke,HIGH
+"muscle weakness, constipation, depression, weight gain, dry skin, cold sensitivity",Hypothyroidism,MEDIUM
+"night sweats, weight loss, coughing blood, chest pain, fatigue, fever",Tuberculosis,HIGH
+"bloating, gas, constipation, diarrhea",Irritable Bowel Syndrome,LOW
+weakness and limited movement and muscle pain and muscle spasms and bruising,Muscle Strain,LOW
+night sweats coughing blood fatigue weight loss fever,Tuberculosis,HIGH
+high fever muscle pain headache nausea,Malaria,HIGH
+staring spells confusion anxiety,Epilepsy,HIGH
+"weight gain, dry skin, cold sensitivity, depression, muscle weakness",Hypothyroidism,MEDIUM
+whiteheads blackheads oily skin scarring pimples skin inflammation,Acne,LOW
+muscle tension and irritability and fatigue and excessive worry,Anxiety Disorder,MEDIUM
+weakness loss of height back pain stooped posture joint pain,Osteoporosis,MEDIUM
+fever and night sweats and chest pain,Tuberculosis,HIGH
+sweating and difficulty breathing and fatigue and cough with phlegm,Pneumonia,HIGH
+"vomiting, headache, nausea, stomach cramps, diarrhea",Gastroenteritis,MEDIUM
+"anxiety, uncontrollable jerking, loss of consciousness, confusion",Epilepsy,HIGH
+nausea and itching and difficulty breathing and hives,Food Allergy,MEDIUM
+"heartburn, vomiting, weight loss, dark stool",Peptic Ulcer,MEDIUM
+"redness around joints, swelling, joint pain, stiffness",Arthritis,MEDIUM
+frequent urination vomiting pink urine nausea pain during urination,Kidney Stones,HIGH
+appetite changes fatigue loss of interest sleep problems persistent sadness,Depression,MEDIUM
+"sore throat, runny nose, cough, sneezing, congestion, watery eyes",Common Cold,LOW
+waking up at night difficulty concentrating difficulty falling asleep daytime fatigue irritability,Insomnia,LOW
+sore throat and fatigue and cough and runny nose,Influenza (Flu),MEDIUM
+"bleeding gums, joint pain, rash",Dengue,HIGH
+stiffness fatigue redness around joints,Arthritis,MEDIUM
+fever and loss of appetite and severe abdominal pain and constipation,Appendicitis,HIGH
+"dizziness, chest pain, fatigue, swollen legs, shortness of breath, irregular heartbeat",Heart Disease,HIGH
+"fatigue, dry skin, weight gain, muscle weakness, constipation",Hypothyroidism,MEDIUM
+thick nails and dry cracked skin and silvery scales,Psoriasis,LOW
+"cracking skin, itching, redness",Fungal Infection,LOW
+"fatigue, tremors, rapid heartbeat",Hyperthyroidism,MEDIUM
+gritty feeling sensitivity to light watery eyes itchy eyes discharge from eyes,Conjunctivitis,LOW
+"joint pain, nausea, loss of appetite, abdominal pain, fatigue, jaundice",Hepatitis,HIGH
+blisters dry skin swelling itchy skin,Dermatitis,LOW
+dizziness chest pain nosebleeds,Hypertension,HIGH
+loss of consciousness seizures uncontrollable jerking staring spells confusion,Epilepsy,HIGH
+diarrhea and vomiting and headache,Gastroenteritis,MEDIUM
+"muscle tension, sleep problems, excessive worry",Anxiety Disorder,MEDIUM
+redness around joints joint pain fatigue swelling reduced range of motion,Arthritis,MEDIUM
+red eyes discharge from eyes gritty feeling watery eyes,Conjunctivitis,LOW
+"rough patches, cracked skin, dry skin",Eczema,LOW
+gritty feeling sensitivity to light itchy eyes discharge from eyes watery eyes red eyes,Conjunctivitis,LOW
+"itchy rash, fatigue, fever, blisters, red spots",Chickenpox,MEDIUM
+diarrhea and stomach cramps and headache and fever,Gastroenteritis,MEDIUM
+diarrhea nausea dehydration headache vomiting stomach cramps,Gastroenteritis,MEDIUM
+"sweating, anxiety, fatigue, weight loss, rapid heartbeat",Hyperthyroidism,MEDIUM
+"itchy nose, watery eyes, runny nose, itchy throat, sneezing",Allergic Rhinitis,LOW
+"difficulty sleeping, tremors, anxiety, rapid heartbeat, sweating, weight loss",Hyperthyroidism,MEDIUM
+"fatigue, swelling, stiffness",Arthritis,MEDIUM
+nausea sensitivity to sound vomiting sensitivity to light visual disturbances,Migraine,LOW
+"diarrhea, prolonged fever, loss of appetite, weakness, headache, stomach pain",Typhoid,HIGH
+"pale skin, cold hands, headache, fatigue",Anemia,MEDIUM
+"difficulty swallowing, regurgitation, heartburn, sour taste, chest pain",Acid Reflux (GERD),LOW
+bad breath facial pain runny nose,Sinusitis,LOW
+nausea and frequent urination and severe pain in side and pink urine and vomiting and pain during urination,Kidney Stones,HIGH
+cracking and blisters and swelling and dry skin and itchy skin and redness,Dermatitis,LOW
+dehydration fever vomiting headache diarrhea nausea,Gastroenteritis,MEDIUM
+difficulty breathing hives dizziness nausea,Food Allergy,MEDIUM
+difficulty swallowing regurgitation bloating heartburn chest pain,Acid Reflux (GERD),LOW
+itchy skin and redness and blisters and dry skin and swelling,Dermatitis,LOW
+"jaundice, fatigue, joint pain, abdominal pain, loss of appetite, nausea",Hepatitis,HIGH
+shortness of breath and dizziness and nosebleeds,Hypertension,HIGH
+loss of consciousness and anxiety and seizures and uncontrollable jerking and confusion and staring spells,Epilepsy,HIGH
+nasal congestion headache runny nose fever bad breath facial pain,Sinusitis,LOW
+difficulty swallowing and regurgitation and sour taste and bloating,Acid Reflux (GERD),LOW
+heartburn and vomiting and dark stool,Peptic Ulcer,MEDIUM
+"muscle pain, vomiting, chills, sweating",Malaria,HIGH
+"vomiting, fever, nausea, severe abdominal pain, loss of appetite",Appendicitis,HIGH
+seizures and confusion and loss of consciousness and anxiety and uncontrollable jerking,Epilepsy,HIGH
+nasal congestion and sneezing and watery eyes and runny nose and itchy nose and itchy throat,Allergic Rhinitis,LOW
+difficulty concentrating and loss of interest and fatigue and sleep problems and appetite changes,Depression,MEDIUM
+headache and nausea and eye pain,Glaucoma,HIGH
+frequent urination pelvic pain strong urine odor burning urination fever,Urinary Tract Infection,MEDIUM
+sensitivity to light itchy eyes watery eyes,Conjunctivitis,LOW
+"nasal congestion, bad breath, cough, facial pain, runny nose",Sinusitis,LOW
+"scaling, ring-shaped rash, redness, cracking skin",Fungal Infection,LOW
+"confusion, uncontrollable jerking, seizures, anxiety, staring spells",Epilepsy,HIGH
+fatigue sleep problems restlessness muscle tension difficulty concentrating excessive worry,Anxiety Disorder,MEDIUM
+"fatigue, sleep problems, persistent sadness, difficulty concentrating, loss of interest",Depression,MEDIUM
+rapid heartbeat difficulty sleeping fatigue weight loss sweating,Hyperthyroidism,MEDIUM
+"blurred vision, halos around lights, headache, eye pain",Glaucoma,HIGH
+weight loss dark stool nausea bloating vomiting,Peptic Ulcer,MEDIUM
+"joint pain, fatigue, redness around joints, reduced range of motion, stiffness, swelling",Arthritis,MEDIUM
+"nausea, blurred vision, vision loss, eye pain, halos around lights, headache",Glaucoma,HIGH
+"dry skin, fatigue, weight gain, constipation",Hypothyroidism,MEDIUM
+"difficulty concentrating, headache, daytime fatigue",Insomnia,LOW
+"vision loss, eye pain, headache, nausea",Glaucoma,HIGH
+burning sensation redness ring-shaped rash cracking skin,Fungal Infection,LOW
+"frequent urination, blood in urine, swollen ankles, foamy urine, fatigue",Kidney Disease,HIGH
+"fatigue, difficulty concentrating, loss of interest, sleep problems, persistent sadness, appetite changes",Depression,MEDIUM
+spinning sensation and balance problems and dizziness and nausea,Vertigo,MEDIUM
+dizziness and fatigue and thirst and dark urine,Dehydration,MEDIUM
+"high fever, red eyes, cough, rash",Measles,MEDIUM
+jaundice and fatigue and dark urine and joint pain,Hepatitis,HIGH
+headache irritability difficulty falling asleep waking up at night daytime fatigue,Insomnia,LOW
+high fever bleeding gums pain behind eyes,Dengue,HIGH
+"loss of appetite, fatigue, blisters",Chickenpox,MEDIUM
+fever and coughing blood and chest pain and persistent cough and night sweats and fatigue,Tuberculosis,HIGH
+"bruising, muscle spasms, limited movement, swelling, muscle pain, weakness",Muscle Strain,LOW
+diarrhea gas constipation cramping abdominal pain bloating,Irritable Bowel Syndrome,LOW
+"muscle cramps, frequent urination, fatigue, swollen ankles",Kidney Disease,HIGH
+cracking dry skin redness,Dermatitis,LOW
+back pain bone fractures loss of height,Osteoporosis,MEDIUM
+"fatigue, dull headache, neck pain, tenderness on scalp, pressure around forehead",Tension Headache,LOW
+"high body temperature, nausea, unconsciousness, headache",Heat Stroke,HIGH
+pink urine nausea frequent urination pain during urination vomiting severe pain in side,Kidney Stones,HIGH
+"bloating, gas, abdominal pain, diarrhea, cramping",Irritable Bowel Syndrome,LOW
+restlessness and irritability and fatigue and sleep problems,Anxiety Disorder,MEDIUM
+"weakness, bone fractures, joint pain",Osteoporosis,MEDIUM
+chest pain and irregular heartbeat and swollen legs and dizziness and fatigue,Heart Disease,HIGH
+"joint pain, redness around joints, reduced range of motion",Arthritis,MEDIUM
+confusion anxiety staring spells,Epilepsy,HIGH
+watery eyes itchy eyes red eyes discharge from eyes sensitivity to light,Conjunctivitis,LOW
+"slow healing wounds, weight loss, blurred vision, increased thirst, frequent urination",Diabetes,HIGH
+sensitivity to light sensitivity to sound severe headache nausea,Migraine,LOW
+"constipation, severe abdominal pain, loss of appetite, nausea, fever, vomiting",Appendicitis,HIGH
+cold sensitivity and fatigue and dry skin,Hypothyroidism,MEDIUM
+burning sensation ring-shaped rash redness cracking skin itching scaling,Fungal Infection,LOW
+ring-shaped rash cracking skin burning sensation itching redness,Fungal Infection,LOW
+"vision problems, headache, nosebleeds, dizziness, shortness of breath, chest pain",Hypertension,HIGH
+"dull headache, fatigue, neck pain",Tension Headache,LOW
+vomiting headache spinning sensation,Vertigo,MEDIUM
+"diarrhea, constipation, cramping, abdominal pain",Irritable Bowel Syndrome,LOW
+hives nausea dizziness swelling itching difficulty breathing,Food Allergy,MEDIUM
+difficulty concentrating and difficulty falling asleep and waking up at night and daytime fatigue and irritability,Insomnia,LOW
+loss of appetite diarrhea prolonged fever rash headache stomach pain,Typhoid,HIGH
+visual disturbances and vomiting and sensitivity to light and sensitivity to sound,Migraine,LOW
+white spots in mouth and red eyes and rash and sensitivity to light and high fever,Measles,MEDIUM
+"itching, redness, cracking skin",Fungal Infection,LOW
+red skin high body temperature nausea confusion unconsciousness,Heat Stroke,HIGH
+runny nose watery eyes sneezing itchy throat nasal congestion itchy nose,Allergic Rhinitis,LOW
+vision loss and blurred vision and headache and halos around lights,Glaucoma,HIGH
+"swelling, blisters, cracking",Dermatitis,LOW
+pink urine and pain during urination and severe pain in side and nausea and frequent urination,Kidney Stones,HIGH
+waking up at night daytime fatigue irritability difficulty concentrating,Insomnia,LOW
+"fatigue, reduced range of motion, redness around joints, stiffness",Arthritis,MEDIUM
+frequent urination severe pain in side pain during urination pink urine nausea vomiting,Kidney Stones,HIGH
+"rough patches, dry skin, swelling, itchy skin, red patches, cracked skin",Eczema,LOW
+"itching, hives, swelling, nausea, dizziness",Food Allergy,MEDIUM
+burning silvery scales thick nails dry cracked skin itching red patches,Psoriasis,LOW
+restlessness difficulty concentrating irritability excessive worry sleep problems,Anxiety Disorder,MEDIUM
+"coughing at night, rapid breathing, shortness of breath, wheezing, difficulty breathing, chest tightness",Asthma,MEDIUM
+fever severe abdominal pain vomiting nausea,Appendicitis,HIGH
+"limited movement, muscle spasms, muscle pain, weakness, bruising, swelling",Muscle Strain,LOW
+fever nausea headache,Gastroenteritis,MEDIUM
+"pain while chewing, loss of appetite, headache",Mumps,MEDIUM
+sore throat and runny nose and fatigue and body aches,Influenza (Flu),MEDIUM
+"dry skin, itchy skin, cracked skin, rough patches",Eczema,LOW
+"weakness, fever, vomiting, stomach pain, diarrhea, dehydration",Food Poisoning,MEDIUM
+"reduced range of motion, joint pain, swelling, stiffness",Arthritis,MEDIUM
+watery eyes and discharge from eyes and itchy eyes and gritty feeling and sensitivity to light,Conjunctivitis,LOW
+"vomiting, nausea, frequent urination, pink urine, pain during urination",Kidney Stones,HIGH
+"severe pain in side, nausea, vomiting, pain during urination",Kidney Stones,HIGH
+difficulty breathing stomach pain swelling nausea dizziness,Food Allergy,MEDIUM
+fatigue anxiety difficulty sleeping rapid heartbeat weight loss sweating,Hyperthyroidism,MEDIUM
+"rapid breathing, wheezing, coughing at night, chest tightness",Asthma,MEDIUM
+dry cracked skin and red patches and silvery scales,Psoriasis,LOW
+fever constipation vomiting loss of appetite severe abdominal pain,Appendicitis,HIGH
+weight gain depression fatigue cold sensitivity muscle weakness,Hypothyroidism,MEDIUM
+"dry cracked skin, burning, silvery scales, thick nails, red patches",Psoriasis,LOW
+"bruising, muscle spasms, limited movement, swelling, weakness, muscle pain",Muscle Strain,LOW
+rash headache diarrhea,Typhoid,HIGH
+rough patches and cracked skin and itchy skin and swelling and red patches,Eczema,LOW
+discharge from eyes and red eyes and watery eyes and sensitivity to light,Conjunctivitis,LOW
+dark stool vomiting bloating nausea weight loss heartburn,Peptic Ulcer,MEDIUM
+dizziness nausea spinning sensation,Vertigo,MEDIUM
+"restlessness, muscle tension, excessive worry, difficulty concentrating, sleep problems, fatigue",Anxiety Disorder,MEDIUM
+balance problems and headache and dizziness and vomiting and nausea and spinning sensation,Vertigo,MEDIUM
+fatigue and sleep problems and difficulty concentrating and appetite changes and persistent sadness and loss of interest,Depression,MEDIUM
+"pink urine, pain during urination, nausea, severe pain in side, frequent urination, vomiting",Kidney Stones,HIGH
+"bloating, heartburn, weight loss, stomach pain",Peptic Ulcer,MEDIUM
+"mild fever, watery eyes, runny nose, sneezing",Common Cold,LOW
+fatigue and sleep problems and persistent sadness and loss of interest and difficulty concentrating,Depression,MEDIUM
+reduced range of motion and redness around joints and joint pain and swelling and stiffness,Arthritis,MEDIUM
+nasal congestion itchy nose sneezing runny nose watery eyes itchy throat,Allergic Rhinitis,LOW
+cracking swelling redness itchy skin blisters,Dermatitis,LOW
+weight loss and anxiety and tremors and rapid heartbeat,Hyperthyroidism,MEDIUM
+itchy skin rough patches red patches dry skin,Eczema,LOW
+sweating difficulty sleeping tremors,Hyperthyroidism,MEDIUM
+muscle spasms bruising muscle pain,Muscle Strain,LOW
+shortness of breath chest tightness coughing at night wheezing difficulty breathing,Asthma,MEDIUM
+difficulty concentrating daytime fatigue headache irritability,Insomnia,LOW
+difficulty sleeping weight loss anxiety fatigue rapid heartbeat,Hyperthyroidism,MEDIUM
+dry cracked skin and red patches and itching,Psoriasis,LOW
+confusion and staring spells and anxiety,Epilepsy,HIGH
+"white spots in mouth, rash, sensitivity to light, high fever, runny nose",Measles,MEDIUM
+"sweating, chills, chest pain, high fever, cough with phlegm, fatigue",Pneumonia,HIGH
+runny nose sore throat cough fatigue high fever,Influenza (Flu),MEDIUM
+difficulty concentrating fatigue appetite changes sleep problems persistent sadness loss of interest,Depression,MEDIUM
+fever pelvic pain strong urine odor burning urination frequent urination cloudy urine,Urinary Tract Infection,MEDIUM
+dark stool and weight loss and bloating and nausea,Peptic Ulcer,MEDIUM
+"fever, headache, nasal congestion, facial pain, cough",Sinusitis,LOW
+body aches headache cough,Influenza (Flu),MEDIUM
+sensitivity to light discharge from eyes gritty feeling itchy eyes watery eyes red eyes,Conjunctivitis,LOW
+abdominal pain cramping constipation gas bloating,Irritable Bowel Syndrome,LOW
+red spots and headache and loss of appetite,Chickenpox,MEDIUM
+"difficulty concentrating, appetite changes, fatigue, loss of interest, persistent sadness",Depression,MEDIUM
+"neck pain, tenderness on scalp, fatigue, pressure around forehead, dull headache",Tension Headache,LOW
+shortness of breath nosebleeds dizziness chest pain,Hypertension,HIGH
+uncontrollable jerking anxiety seizures,Epilepsy,HIGH
+stooped posture bone fractures back pain loss of height,Osteoporosis,MEDIUM
+vomiting and balance problems and headache and spinning sensation,Vertigo,MEDIUM
+skin inflammation pimples whiteheads blackheads oily skin scarring,Acne,LOW
+blisters fever itchy rash,Chickenpox,MEDIUM
+cough and bad breath and facial pain,Sinusitis,LOW
+chest discomfort and mucus production and persistent cough and mild fever and fatigue,Bronchitis,MEDIUM
+"prolonged fever, stomach pain, diarrhea",Typhoid,HIGH
+reduced range of motion redness around joints stiffness,Arthritis,MEDIUM
+"fever, nasal congestion, headache, runny nose, bad breath, cough",Sinusitis,LOW
+dark urine thirst dizziness headache dry mouth,Dehydration,MEDIUM
+fever and fatigue and muscle aches and swollen salivary glands and pain while chewing and headache,Mumps,MEDIUM
+frequent urination and cloudy urine and fever and burning urination and pelvic pain and strong urine odor,Urinary Tract Infection,MEDIUM
+fatigue and thirst and dark urine,Dehydration,MEDIUM
+persistent cough fatigue shortness of breath mild fever mucus production chest discomfort,Bronchitis,MEDIUM
+difficulty concentrating irritability daytime fatigue waking up at night difficulty falling asleep headache,Insomnia,LOW
+"congestion, cough, sore throat, runny nose",Common Cold,LOW
+stomach cramps and dehydration and vomiting and nausea and fever and headache,Gastroenteritis,MEDIUM
+"cough with phlegm, difficulty breathing, sweating",Pneumonia,HIGH
+fatigue itchy rash fever blisters loss of appetite red spots,Chickenpox,MEDIUM
+pressure around forehead neck pain tenderness on scalp dull headache,Tension Headache,LOW
+"sour taste, bloating, heartburn, difficulty swallowing",Acid Reflux (GERD),LOW
+"fatigue, difficulty concentrating, sleep problems, appetite changes, persistent sadness",Depression,MEDIUM
+heartburn and bloating and nausea,Peptic Ulcer,MEDIUM
+"restlessness, muscle tension, sleep problems, fatigue, difficulty concentrating, excessive worry",Anxiety Disorder,MEDIUM
+"difficulty breathing, cough with phlegm, fatigue",Pneumonia,HIGH
+muscle cramps swollen ankles fatigue,Kidney Disease,HIGH
+fatigue headache weakness dizziness,Anemia,MEDIUM
+"dry skin, constipation, weight gain",Hypothyroidism,MEDIUM
+"weight loss, fatigue, frequent urination",Diabetes,HIGH
+"fatigue, difficulty sleeping, sweating, weight loss",Hyperthyroidism,MEDIUM
+"vision problems, dizziness, headache, shortness of breath, nosebleeds",Hypertension,HIGH
+fatigue and blurred vision and increased thirst,Diabetes,HIGH
+vomiting loss of appetite severe abdominal pain constipation,Appendicitis,HIGH
+"tremors, fatigue, sweating",Hyperthyroidism,MEDIUM
+rash and stomach pain and prolonged fever and weakness and diarrhea,Typhoid,HIGH
+"muscle pain, pain behind eyes, joint pain",Dengue,HIGH
+"rapid heartbeat, nausea, high body temperature, confusion, red skin",Heat Stroke,HIGH
+waking up at night difficulty falling asleep daytime fatigue,Insomnia,LOW
+"frequent urination, swollen ankles, foamy urine, blood in urine, fatigue, muscle cramps",Kidney Disease,HIGH
+"jaundice, loss of appetite, dark urine",Hepatitis,HIGH
+stomach pain bloating weight loss heartburn vomiting,Peptic Ulcer,MEDIUM
+weakness stomach pain diarrhea dehydration vomiting nausea,Food Poisoning,MEDIUM
+"red patches, swelling, itchy skin, cracked skin, rough patches",Eczema,LOW
+"sweating, anxiety, difficulty sleeping, tremors, weight loss",Hyperthyroidism,MEDIUM
+"loss of consciousness, staring spells, seizures, anxiety, confusion",Epilepsy,HIGH
+fatigue increased thirst frequent urination weight loss blurred vision slow healing wounds,Diabetes,HIGH
+rash headache weakness,Typhoid,HIGH
+strong urine odor fever pelvic pain burning urination frequent urination cloudy urine,Urinary Tract Infection,MEDIUM
+persistent sadness sleep problems difficulty concentrating,Depression,MEDIUM
+fatigue coughing blood night sweats weight loss,Tuberculosis,HIGH
+red patches and dry cracked skin and itching and thick nails,Psoriasis,LOW
+"spinning sensation, nausea, headache",Vertigo,MEDIUM
+sore throat and runny nose and sneezing and mild fever,Common Cold,LOW
+itchy nose and nasal congestion and watery eyes and runny nose,Allergic Rhinitis,LOW
+"high body temperature, unconsciousness, confusion, red skin",Heat Stroke,HIGH
+dry cracked skin burning itching silvery scales red patches thick nails,Psoriasis,LOW
+wheezing rapid breathing shortness of breath,Asthma,MEDIUM
+dark stool and vomiting and weight loss and heartburn and stomach pain and nausea,Peptic Ulcer,MEDIUM
+sore throat and runny nose and high fever and fatigue and body aches and headache,Influenza (Flu),MEDIUM
+"persistent sadness, appetite changes, sleep problems, loss of interest, fatigue",Depression,MEDIUM
+runny nose red eyes high fever rash,Measles,MEDIUM
+chills nausea vomiting,Malaria,HIGH
+pain behind eyes severe headache rash high fever,Dengue,HIGH
+pressure around forehead tenderness on scalp fatigue,Tension Headache,LOW
+"rapid breathing, difficulty breathing, shortness of breath, wheezing, chest tightness, coughing at night",Asthma,MEDIUM
+"headache, pale skin, weakness, dizziness",Anemia,MEDIUM
+discharge from eyes and red eyes and sensitivity to light and watery eyes and gritty feeling and itchy eyes,Conjunctivitis,LOW
+itching dry cracked skin red patches silvery scales,Psoriasis,LOW
+sensitivity to light and nausea and sensitivity to sound and vomiting and visual disturbances and severe headache,Migraine,LOW
+"fatigue, appetite changes, sleep problems, difficulty concentrating",Depression,MEDIUM
+nausea loss of appetite fever vomiting constipation,Appendicitis,HIGH
+mild fever watery eyes congestion cough sore throat,Common Cold,LOW
+dizziness fatigue irregular heartbeat,Heart Disease,HIGH
+blisters and swelling and itchy skin and dry skin,Dermatitis,LOW
+"spinning sensation, balance problems, nausea",Vertigo,MEDIUM
+"jaundice, abdominal pain, nausea",Hepatitis,HIGH
+fever stomach pain diarrhea nausea vomiting weakness,Food Poisoning,MEDIUM
+"severe pain in side, vomiting, pink urine, nausea",Kidney Stones,HIGH
+"red skin, confusion, nausea, headache, rapid heartbeat",Heat Stroke,HIGH
+"reduced range of motion, joint pain, swelling, redness around joints",Arthritis,MEDIUM
+headache and waking up at night and difficulty falling asleep,Insomnia,LOW
+"itchy rash, fever, blisters",Chickenpox,MEDIUM
+"red skin, headache, high body temperature, rapid heartbeat, nausea",Heat Stroke,HIGH
+sensitivity to light red eyes runny nose rash cough,Measles,MEDIUM
+burning urination and pelvic pain and cloudy urine and strong urine odor,Urinary Tract Infection,MEDIUM
+nausea loss of appetite severe abdominal pain constipation vomiting,Appendicitis,HIGH
+"burning, thick nails, dry cracked skin, red patches",Psoriasis,LOW
+frequent urination and swollen ankles and fatigue,Kidney Disease,HIGH
+silvery scales red patches thick nails,Psoriasis,LOW
+weakness muscle spasms limited movement swelling bruising muscle pain,Muscle Strain,LOW
+sour taste regurgitation bloating difficulty swallowing chest pain,Acid Reflux (GERD),LOW
+"muscle tension, fatigue, restlessness, difficulty concentrating, excessive worry",Anxiety Disorder,MEDIUM
+"muscle pain, swelling, weakness, limited movement, bruising",Muscle Strain,LOW
+headache diarrhea stomach pain rash prolonged fever loss of appetite,Typhoid,HIGH
+"limited movement, bruising, swelling",Muscle Strain,LOW
+high fever cough sensitivity to light rash red eyes,Measles,MEDIUM
+difficulty breathing chest pain cough with phlegm sweating high fever chills,Pneumonia,HIGH
+loss of appetite stomach pain diarrhea,Typhoid,HIGH
+burning dry cracked skin itching,Psoriasis,LOW
+pink urine nausea pain during urination frequent urination,Kidney Stones,HIGH
+"fatigue, cold sensitivity, constipation, weight gain, depression, muscle weakness",Hypothyroidism,MEDIUM
+"fever, vomiting, constipation, severe abdominal pain",Appendicitis,HIGH
+"runny nose, sore throat, high fever",Influenza (Flu),MEDIUM
+"dizziness, chest pain, irregular heartbeat, fatigue, shortness of breath, swollen legs",Heart Disease,HIGH
+pain behind eyes and joint pain and rash and high fever and severe headache and muscle pain,Dengue,HIGH
+"stomach pain, nausea, dehydration, fever",Food Poisoning,MEDIUM
+abdominal pain dark urine fatigue jaundice loss of appetite joint pain,Hepatitis,HIGH
+nausea difficulty breathing itching dizziness swelling,Food Allergy,MEDIUM
+heartburn difficulty swallowing bloating,Acid Reflux (GERD),LOW
+"headache, balance problems, nausea, vomiting, dizziness, spinning sensation",Vertigo,MEDIUM
+"daytime fatigue, difficulty falling asleep, irritability, waking up at night",Insomnia,LOW
+anxiety confusion loss of consciousness uncontrollable jerking staring spells,Epilepsy,HIGH
+"fatigue, itchy rash, headache, blisters, fever",Chickenpox,MEDIUM
+nausea and severe headache and visual disturbances and sensitivity to sound and vomiting,Migraine,LOW
+"persistent sadness, sleep problems, loss of interest, fatigue, appetite changes",Depression,MEDIUM
+swollen legs and shortness of breath and chest pain and dizziness and irregular heartbeat,Heart Disease,HIGH
+loss of height weakness back pain,Osteoporosis,MEDIUM
+"bad breath, headache, nasal congestion, cough",Sinusitis,LOW
+"bone fractures, joint pain, back pain",Osteoporosis,MEDIUM
+"swollen ankles, fatigue, muscle cramps",Kidney Disease,HIGH
+coughing at night and rapid breathing and wheezing,Asthma,MEDIUM
+neck pain pressure around forehead dull headache tenderness on scalp,Tension Headache,LOW
+wheezing chest tightness shortness of breath coughing at night rapid breathing difficulty breathing,Asthma,MEDIUM
+high fever and rash and joint pain and severe headache,Dengue,HIGH
+dizziness weakness fatigue,Anemia,MEDIUM
+vomiting dark stool nausea heartburn bloating,Peptic Ulcer,MEDIUM
+"rash, weakness, diarrhea, loss of appetite",Typhoid,HIGH
+fever runny nose headache cough facial pain,Sinusitis,LOW
+itchy skin cracking swelling redness blisters dry skin,Dermatitis,LOW
+"high fever, fatigue, chills",Influenza (Flu),MEDIUM
+fatigue and slow healing wounds and weight loss and blurred vision and frequent urination and increased thirst,Diabetes,HIGH
+mucus production and shortness of breath and mild fever and persistent cough and fatigue and chest discomfort,Bronchitis,MEDIUM
+coughing blood and persistent cough and chest pain,Tuberculosis,HIGH
+fatigue abdominal pain jaundice nausea dark urine,Hepatitis,HIGH
+muscle cramps and foamy urine and fatigue and blood in urine and frequent urination and swollen ankles,Kidney Disease,HIGH
+fatigue and high fever and headache and muscle pain and sweating,Malaria,HIGH
+"fever, persistent cough, night sweats, fatigue",Tuberculosis,HIGH
